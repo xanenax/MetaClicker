@@ -1,0 +1,38 @@
+name: Build
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Quellcode laden
+        uses: actions/checkout@v4
+
+      - name: MSBuild einrichten
+        uses: microsoft/setup-msbuild@v2
+
+      - name: NuGet einrichten
+        uses: NuGet/setup-nuget@v2
+
+      - name: Pakete wiederherstellen
+        run: nuget restore MetaClicker.sln
+
+      - name: Release bauen
+        run: msbuild MetaClicker.sln /m /p:Configuration=Release /p:Platform="Any CPU"
+
+      - name: Programm als Build-Artefakt speichern
+        uses: actions/upload-artifact@v4
+        with:
+          name: MetaClicker-windows-x64
+          path: MetaClicker/bin/Release/MetaClicker.exe
+          if-no-files-found: error
