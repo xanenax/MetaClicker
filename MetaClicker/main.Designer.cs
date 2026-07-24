@@ -1,4 +1,4 @@
-﻿namespace MetaClicker
+namespace MetaClicker
 {
     partial class main
     {
@@ -47,8 +47,8 @@
             // 
             // siticoneGradientPanel1
             // 
-            this.siticoneGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(20)))));
-            this.siticoneGradientPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(30)))));
+            this.siticoneGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
+            this.siticoneGradientPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(29)))), ((int)(((byte)(79)))));
             this.siticoneGradientPanel1.BorderRadius = 5;
             this.siticoneGradientPanel1.BorderThickness = 1;
             this.siticoneGradientPanel1.Controls.Add(this.logo);
@@ -68,7 +68,7 @@
             // 
             this.logo.AutoSize = true;
             this.logo.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logo.ForeColor = System.Drawing.Color.Pink;
+            this.logo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.logo.Location = new System.Drawing.Point(8, 4);
             this.logo.Name = "logo";
             this.logo.Size = new System.Drawing.Size(43, 37);
@@ -78,19 +78,19 @@
             // 
             // SettingsTab
             // 
-            this.SettingsTab.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(28)))));
+            this.SettingsTab.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(23)))), ((int)(((byte)(68)))));
             this.SettingsTab.BorderRadius = 5;
             this.SettingsTab.BorderThickness = 1;
             this.SettingsTab.ButtonMode = Siticone.UI.WinForms.Enums.ButtonMode.RadioButton;
-            this.SettingsTab.CheckedState.BorderColor = System.Drawing.Color.Pink;
-            this.SettingsTab.CheckedState.FillColor = System.Drawing.Color.Pink;
+            this.SettingsTab.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.SettingsTab.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.SettingsTab.CheckedState.Parent = this.SettingsTab;
             this.SettingsTab.CustomImages.Parent = this.SettingsTab;
             this.SettingsTab.FillColor = System.Drawing.Color.Transparent;
             this.SettingsTab.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.SettingsTab.ForeColor = System.Drawing.Color.White;
-            this.SettingsTab.HoveredState.BorderColor = System.Drawing.Color.Pink;
-            this.SettingsTab.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(20)))));
+            this.SettingsTab.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.SettingsTab.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
             this.SettingsTab.HoveredState.Parent = this.SettingsTab;
             this.SettingsTab.Image = global::MetaClicker.Properties.Resources.output_onlinepngtools__2_;
             this.SettingsTab.ImageOffset = new System.Drawing.Point(1, 0);
@@ -104,19 +104,19 @@
             // 
             // RightClickerTab
             // 
-            this.RightClickerTab.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(28)))));
+            this.RightClickerTab.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(23)))), ((int)(((byte)(68)))));
             this.RightClickerTab.BorderRadius = 5;
             this.RightClickerTab.BorderThickness = 1;
             this.RightClickerTab.ButtonMode = Siticone.UI.WinForms.Enums.ButtonMode.RadioButton;
-            this.RightClickerTab.CheckedState.BorderColor = System.Drawing.Color.Pink;
-            this.RightClickerTab.CheckedState.FillColor = System.Drawing.Color.Pink;
+            this.RightClickerTab.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.RightClickerTab.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.RightClickerTab.CheckedState.Parent = this.RightClickerTab;
             this.RightClickerTab.CustomImages.Parent = this.RightClickerTab;
             this.RightClickerTab.FillColor = System.Drawing.Color.Transparent;
             this.RightClickerTab.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.RightClickerTab.ForeColor = System.Drawing.Color.White;
-            this.RightClickerTab.HoveredState.BorderColor = System.Drawing.Color.Pink;
-            this.RightClickerTab.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(20)))));
+            this.RightClickerTab.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.RightClickerTab.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
             this.RightClickerTab.HoveredState.Parent = this.RightClickerTab;
             this.RightClickerTab.Image = global::MetaClicker.Properties.Resources.mouse_right_click_50px;
             this.RightClickerTab.ImageOffset = new System.Drawing.Point(1, 0);
@@ -130,20 +130,20 @@
             // 
             // LeftClickerTab
             // 
-            this.LeftClickerTab.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(28)))));
+            this.LeftClickerTab.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(23)))), ((int)(((byte)(68)))));
             this.LeftClickerTab.BorderRadius = 5;
             this.LeftClickerTab.BorderThickness = 1;
             this.LeftClickerTab.ButtonMode = Siticone.UI.WinForms.Enums.ButtonMode.RadioButton;
             this.LeftClickerTab.Checked = true;
-            this.LeftClickerTab.CheckedState.BorderColor = System.Drawing.Color.Pink;
-            this.LeftClickerTab.CheckedState.FillColor = System.Drawing.Color.Pink;
+            this.LeftClickerTab.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.LeftClickerTab.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.LeftClickerTab.CheckedState.Parent = this.LeftClickerTab;
             this.LeftClickerTab.CustomImages.Parent = this.LeftClickerTab;
             this.LeftClickerTab.FillColor = System.Drawing.Color.Transparent;
             this.LeftClickerTab.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.LeftClickerTab.ForeColor = System.Drawing.Color.White;
-            this.LeftClickerTab.HoveredState.BorderColor = System.Drawing.Color.Pink;
-            this.LeftClickerTab.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(20)))));
+            this.LeftClickerTab.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.LeftClickerTab.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
             this.LeftClickerTab.HoveredState.Parent = this.LeftClickerTab;
             this.LeftClickerTab.Image = global::MetaClicker.Properties.Resources.left_click_50px_1;
             this.LeftClickerTab.ImageOffset = new System.Drawing.Point(1, 0);
@@ -162,7 +162,7 @@
             // 
             // leftClicker1
             // 
-            this.leftClicker1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(22)))));
+            this.leftClicker1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(6)))), ((int)(((byte)(14)))));
             this.leftClicker1.Location = new System.Drawing.Point(118, 41);
             this.leftClicker1.Name = "leftClicker1";
             this.leftClicker1.Size = new System.Drawing.Size(314, 247);
@@ -170,7 +170,7 @@
             // 
             // rightClicker1
             // 
-            this.rightClicker1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(22)))));
+            this.rightClicker1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(6)))), ((int)(((byte)(14)))));
             this.rightClicker1.Location = new System.Drawing.Point(118, 41);
             this.rightClicker1.Name = "rightClicker1";
             this.rightClicker1.Size = new System.Drawing.Size(316, 247);
@@ -178,7 +178,7 @@
             // 
             // settings1
             // 
-            this.settings1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(22)))));
+            this.settings1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(6)))), ((int)(((byte)(14)))));
             this.settings1.Location = new System.Drawing.Point(117, 15);
             this.settings1.Name = "settings1";
             this.settings1.Size = new System.Drawing.Size(317, 273);
@@ -210,7 +210,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(22)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(6)))), ((int)(((byte)(14)))));
             this.ClientSize = new System.Drawing.Size(550, 300);
             this.Controls.Add(this.siticoneGradientPanel1);
             this.Controls.Add(this.leftClicker1);

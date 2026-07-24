@@ -1,4 +1,4 @@
-﻿namespace MetaClicker.usercontrol
+namespace MetaClicker.usercontrol
 {
     partial class Settings
     {
@@ -49,8 +49,8 @@
             // 
             // siticoneGradientPanel2
             // 
-            this.siticoneGradientPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(20)))));
-            this.siticoneGradientPanel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(30)))));
+            this.siticoneGradientPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
+            this.siticoneGradientPanel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(29)))), ((int)(((byte)(79)))));
             this.siticoneGradientPanel2.BorderRadius = 5;
             this.siticoneGradientPanel2.BorderThickness = 1;
             this.siticoneGradientPanel2.Controls.Add(this.SelfdestructBtn);
@@ -64,19 +64,19 @@
             // 
             // SelfdestructBtn
             // 
-            this.SelfdestructBtn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(28)))));
+            this.SelfdestructBtn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(23)))), ((int)(((byte)(68)))));
             this.SelfdestructBtn.BorderRadius = 5;
             this.SelfdestructBtn.BorderThickness = 1;
             this.SelfdestructBtn.ButtonMode = Siticone.UI.WinForms.Enums.ButtonMode.ToogleButton;
-            this.SelfdestructBtn.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(20)))));
-            this.SelfdestructBtn.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(20)))));
+            this.SelfdestructBtn.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
+            this.SelfdestructBtn.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
             this.SelfdestructBtn.CheckedState.Parent = this.SelfdestructBtn;
             this.SelfdestructBtn.CustomImages.Parent = this.SelfdestructBtn;
-            this.SelfdestructBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.SelfdestructBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             this.SelfdestructBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.SelfdestructBtn.ForeColor = System.Drawing.Color.White;
-            this.SelfdestructBtn.HoveredState.BorderColor = System.Drawing.Color.Pink;
-            this.SelfdestructBtn.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(20)))));
+            this.SelfdestructBtn.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.SelfdestructBtn.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
             this.SelfdestructBtn.HoveredState.Parent = this.SelfdestructBtn;
             this.SelfdestructBtn.ImageOffset = new System.Drawing.Point(1, 0);
             this.SelfdestructBtn.ImageSize = new System.Drawing.Size(30, 30);
@@ -90,10 +90,10 @@
             // AlwaysontopBtn
             // 
             this.AlwaysontopBtn.AutoSize = true;
-            this.AlwaysontopBtn.CheckedState.BorderColor = System.Drawing.Color.Pink;
+            this.AlwaysontopBtn.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.AlwaysontopBtn.CheckedState.BorderRadius = 3;
             this.AlwaysontopBtn.CheckedState.BorderThickness = 0;
-            this.AlwaysontopBtn.CheckedState.FillColor = System.Drawing.Color.Pink;
+            this.AlwaysontopBtn.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.AlwaysontopBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AlwaysontopBtn.ForeColor = System.Drawing.Color.White;
             this.AlwaysontopBtn.Location = new System.Drawing.Point(15, 83);
@@ -101,25 +101,25 @@
             this.AlwaysontopBtn.Size = new System.Drawing.Size(101, 19);
             this.AlwaysontopBtn.TabIndex = 0;
             this.AlwaysontopBtn.Text = "Always on top";
-            this.AlwaysontopBtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.AlwaysontopBtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             this.AlwaysontopBtn.UncheckedState.BorderRadius = 3;
             this.AlwaysontopBtn.UncheckedState.BorderThickness = 0;
-            this.AlwaysontopBtn.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.AlwaysontopBtn.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             // 
             // HideBtn
             // 
-            this.HideBtn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(28)))));
+            this.HideBtn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(23)))), ((int)(((byte)(68)))));
             this.HideBtn.BorderRadius = 5;
             this.HideBtn.BorderThickness = 1;
-            this.HideBtn.CheckedState.BorderColor = System.Drawing.Color.Pink;
-            this.HideBtn.CheckedState.FillColor = System.Drawing.Color.Pink;
+            this.HideBtn.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.HideBtn.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.HideBtn.CheckedState.Parent = this.HideBtn;
             this.HideBtn.CustomImages.Parent = this.HideBtn;
-            this.HideBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.HideBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             this.HideBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.HideBtn.ForeColor = System.Drawing.Color.White;
-            this.HideBtn.HoveredState.BorderColor = System.Drawing.Color.Pink;
-            this.HideBtn.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(20)))));
+            this.HideBtn.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.HideBtn.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
             this.HideBtn.HoveredState.Parent = this.HideBtn;
             this.HideBtn.ImageOffset = new System.Drawing.Point(1, 0);
             this.HideBtn.ImageSize = new System.Drawing.Size(30, 30);
@@ -134,8 +134,8 @@
             // 
             // siticoneGradientPanel1
             // 
-            this.siticoneGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(20)))));
-            this.siticoneGradientPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(30)))));
+            this.siticoneGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
+            this.siticoneGradientPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(29)))), ((int)(((byte)(79)))));
             this.siticoneGradientPanel1.BorderRadius = 5;
             this.siticoneGradientPanel1.BorderThickness = 1;
             this.siticoneGradientPanel1.Controls.Add(this.BSld);
@@ -151,7 +151,7 @@
             // 
             // BSld
             // 
-            this.BSld.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
+            this.BSld.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(15)))), ((int)(((byte)(42)))));
             this.BSld.HoveredState.Parent = this.BSld;
             this.BSld.IndicateFocus = false;
             this.BSld.Location = new System.Drawing.Point(1, 92);
@@ -159,8 +159,8 @@
             this.BSld.Name = "BSld";
             this.BSld.Size = new System.Drawing.Size(303, 23);
             this.BSld.TabIndex = 9;
-            this.BSld.ThumbColor = System.Drawing.Color.Pink;
-            this.BSld.Value = 203;
+            this.BSld.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.BSld.Value = 255;
             // 
             // BValue
             // 
@@ -171,11 +171,11 @@
             this.BValue.Name = "BValue";
             this.BValue.Size = new System.Drawing.Size(43, 17);
             this.BValue.TabIndex = 8;
-            this.BValue.Text = "B: 203";
+            this.BValue.Text = "B: 255";
             // 
             // GSld
             // 
-            this.GSld.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
+            this.GSld.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(15)))), ((int)(((byte)(42)))));
             this.GSld.HoveredState.Parent = this.GSld;
             this.GSld.IndicateFocus = false;
             this.GSld.Location = new System.Drawing.Point(1, 55);
@@ -183,8 +183,8 @@
             this.GSld.Name = "GSld";
             this.GSld.Size = new System.Drawing.Size(303, 23);
             this.GSld.TabIndex = 7;
-            this.GSld.ThumbColor = System.Drawing.Color.Pink;
-            this.GSld.Value = 192;
+            this.GSld.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.GSld.Value = 61;
             // 
             // GValue
             // 
@@ -195,11 +195,11 @@
             this.GValue.Name = "GValue";
             this.GValue.Size = new System.Drawing.Size(45, 17);
             this.GValue.TabIndex = 6;
-            this.GValue.Text = "G: 192";
+            this.GValue.Text = "G: 61";
             // 
             // RSld
             // 
-            this.RSld.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
+            this.RSld.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(15)))), ((int)(((byte)(42)))));
             this.RSld.HoveredState.Parent = this.RSld;
             this.RSld.IndicateFocus = false;
             this.RSld.Location = new System.Drawing.Point(1, 20);
@@ -207,8 +207,8 @@
             this.RSld.Name = "RSld";
             this.RSld.Size = new System.Drawing.Size(303, 23);
             this.RSld.TabIndex = 5;
-            this.RSld.ThumbColor = System.Drawing.Color.Pink;
-            this.RSld.Value = 255;
+            this.RSld.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.RSld.Value = 139;
             // 
             // RValue
             // 
@@ -219,7 +219,7 @@
             this.RValue.Name = "RValue";
             this.RValue.Size = new System.Drawing.Size(44, 17);
             this.RValue.TabIndex = 2;
-            this.RValue.Text = "R: 255";
+            this.RValue.Text = "R: 139";
             // 
             // RGBSldValue
             // 
@@ -234,27 +234,27 @@
             // RGBBtn
             // 
             this.RGBBtn.AutoSize = true;
-            this.RGBBtn.CheckedState.BorderColor = System.Drawing.Color.Pink;
+            this.RGBBtn.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.RGBBtn.CheckedState.BorderRadius = 3;
             this.RGBBtn.CheckedState.BorderThickness = 0;
-            this.RGBBtn.CheckedState.FillColor = System.Drawing.Color.Pink;
+            this.RGBBtn.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.RGBBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RGBBtn.ForeColor = System.Drawing.Color.White;
             this.RGBBtn.Location = new System.Drawing.Point(15, 105);
             this.RGBBtn.Name = "RGBBtn";
             this.RGBBtn.Size = new System.Drawing.Size(106, 19);
             this.RGBBtn.TabIndex = 0;
-            this.RGBBtn.Text = "Rainbow mode";
-            this.RGBBtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.RGBBtn.Text = "RGB fade";
+            this.RGBBtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             this.RGBBtn.UncheckedState.BorderRadius = 3;
             this.RGBBtn.UncheckedState.BorderThickness = 0;
-            this.RGBBtn.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.RGBBtn.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(22)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(6)))), ((int)(((byte)(14)))));
             this.Controls.Add(this.siticoneGradientPanel2);
             this.Controls.Add(this.siticoneGradientPanel1);
             this.Name = "Settings";

@@ -1,4 +1,4 @@
-﻿namespace MetaClicker.usercontrol
+namespace MetaClicker.usercontrol
 {
     partial class LeftClicker
     {
@@ -60,8 +60,8 @@
             // 
             // siticoneGradientPanel1
             // 
-            this.siticoneGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(20)))));
-            this.siticoneGradientPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(30)))));
+            this.siticoneGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
+            this.siticoneGradientPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(29)))), ((int)(((byte)(79)))));
             this.siticoneGradientPanel1.BorderRadius = 5;
             this.siticoneGradientPanel1.BorderThickness = 1;
             this.siticoneGradientPanel1.Controls.Add(this.CPSsld);
@@ -74,7 +74,7 @@
             // 
             // CPSsld
             // 
-            this.CPSsld.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
+            this.CPSsld.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(15)))), ((int)(((byte)(42)))));
             this.CPSsld.HoveredState.Parent = this.CPSsld;
             this.CPSsld.IndicateFocus = false;
             this.CPSsld.Location = new System.Drawing.Point(2, 59);
@@ -83,25 +83,25 @@
             this.CPSsld.Name = "CPSsld";
             this.CPSsld.Size = new System.Drawing.Size(302, 11);
             this.CPSsld.TabIndex = 5;
-            this.CPSsld.ThumbColor = System.Drawing.Color.Pink;
+            this.CPSsld.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.CPSsld.Value = 10;
             this.CPSsld.Paint += new System.Windows.Forms.PaintEventHandler(this.CPSsld_Paint);
             // 
             // ToggleLClicker
             // 
-            this.ToggleLClicker.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(28)))));
+            this.ToggleLClicker.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(23)))), ((int)(((byte)(68)))));
             this.ToggleLClicker.BorderRadius = 5;
             this.ToggleLClicker.BorderThickness = 1;
             this.ToggleLClicker.ButtonMode = Siticone.UI.WinForms.Enums.ButtonMode.ToogleButton;
-            this.ToggleLClicker.CheckedState.BorderColor = System.Drawing.Color.Pink;
-            this.ToggleLClicker.CheckedState.FillColor = System.Drawing.Color.Pink;
+            this.ToggleLClicker.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.ToggleLClicker.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.ToggleLClicker.CheckedState.Parent = this.ToggleLClicker;
             this.ToggleLClicker.CustomImages.Parent = this.ToggleLClicker;
-            this.ToggleLClicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.ToggleLClicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             this.ToggleLClicker.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.ToggleLClicker.ForeColor = System.Drawing.Color.White;
-            this.ToggleLClicker.HoveredState.BorderColor = System.Drawing.Color.Pink;
-            this.ToggleLClicker.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(20)))));
+            this.ToggleLClicker.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.ToggleLClicker.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
             this.ToggleLClicker.HoveredState.Parent = this.ToggleLClicker;
             this.ToggleLClicker.ImageOffset = new System.Drawing.Point(1, 0);
             this.ToggleLClicker.ImageSize = new System.Drawing.Size(30, 30);
@@ -127,8 +127,8 @@
             // 
             // siticoneGradientPanel2
             // 
-            this.siticoneGradientPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(20)))));
-            this.siticoneGradientPanel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(30)))));
+            this.siticoneGradientPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
+            this.siticoneGradientPanel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(29)))), ((int)(((byte)(79)))));
             this.siticoneGradientPanel2.BorderRadius = 5;
             this.siticoneGradientPanel2.BorderThickness = 1;
             this.siticoneGradientPanel2.Controls.Add(this.bindbtn);
@@ -145,18 +145,18 @@
             // 
             // bindbtn
             // 
-            this.bindbtn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(28)))));
+            this.bindbtn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(23)))), ((int)(((byte)(68)))));
             this.bindbtn.BorderRadius = 5;
             this.bindbtn.BorderThickness = 1;
-            this.bindbtn.CheckedState.BorderColor = System.Drawing.Color.Pink;
-            this.bindbtn.CheckedState.FillColor = System.Drawing.Color.Pink;
+            this.bindbtn.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.bindbtn.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.bindbtn.CheckedState.Parent = this.bindbtn;
             this.bindbtn.CustomImages.Parent = this.bindbtn;
-            this.bindbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.bindbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             this.bindbtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindbtn.ForeColor = System.Drawing.Color.White;
-            this.bindbtn.HoveredState.BorderColor = System.Drawing.Color.Pink;
-            this.bindbtn.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(20)))));
+            this.bindbtn.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.bindbtn.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
             this.bindbtn.HoveredState.Parent = this.bindbtn;
             this.bindbtn.ImageOffset = new System.Drawing.Point(1, 0);
             this.bindbtn.ImageSize = new System.Drawing.Size(30, 30);
@@ -172,10 +172,10 @@
             // RmbBtn
             // 
             this.RmbBtn.AutoSize = true;
-            this.RmbBtn.CheckedState.BorderColor = System.Drawing.Color.Pink;
+            this.RmbBtn.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.RmbBtn.CheckedState.BorderRadius = 3;
             this.RmbBtn.CheckedState.BorderThickness = 0;
-            this.RmbBtn.CheckedState.FillColor = System.Drawing.Color.Pink;
+            this.RmbBtn.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.RmbBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RmbBtn.ForeColor = System.Drawing.Color.White;
             this.RmbBtn.Location = new System.Drawing.Point(164, 54);
@@ -183,18 +183,18 @@
             this.RmbBtn.Size = new System.Drawing.Size(76, 19);
             this.RmbBtn.TabIndex = 5;
             this.RmbBtn.Text = "RMB lock";
-            this.RmbBtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.RmbBtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             this.RmbBtn.UncheckedState.BorderRadius = 3;
             this.RmbBtn.UncheckedState.BorderThickness = 0;
-            this.RmbBtn.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.RmbBtn.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             // 
             // BrkBnt
             // 
             this.BrkBnt.AutoSize = true;
-            this.BrkBnt.CheckedState.BorderColor = System.Drawing.Color.Pink;
+            this.BrkBnt.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.BrkBnt.CheckedState.BorderRadius = 3;
             this.BrkBnt.CheckedState.BorderThickness = 0;
-            this.BrkBnt.CheckedState.FillColor = System.Drawing.Color.Pink;
+            this.BrkBnt.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.BrkBnt.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BrkBnt.ForeColor = System.Drawing.Color.White;
             this.BrkBnt.Location = new System.Drawing.Point(164, 29);
@@ -202,18 +202,18 @@
             this.BrkBnt.Size = new System.Drawing.Size(92, 19);
             this.BrkBnt.TabIndex = 4;
             this.BrkBnt.Text = "Break blocks";
-            this.BrkBnt.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.BrkBnt.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             this.BrkBnt.UncheckedState.BorderRadius = 3;
             this.BrkBnt.UncheckedState.BorderThickness = 0;
-            this.BrkBnt.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.BrkBnt.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             // 
             // AlwsBtn
             // 
             this.AlwsBtn.AutoSize = true;
-            this.AlwsBtn.CheckedState.BorderColor = System.Drawing.Color.Pink;
+            this.AlwsBtn.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.AlwsBtn.CheckedState.BorderRadius = 3;
             this.AlwsBtn.CheckedState.BorderThickness = 0;
-            this.AlwsBtn.CheckedState.FillColor = System.Drawing.Color.Pink;
+            this.AlwsBtn.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.AlwsBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AlwsBtn.ForeColor = System.Drawing.Color.White;
             this.AlwsBtn.Location = new System.Drawing.Point(163, 4);
@@ -221,18 +221,18 @@
             this.AlwsBtn.Size = new System.Drawing.Size(80, 19);
             this.AlwsBtn.TabIndex = 3;
             this.AlwsBtn.Text = "Always on";
-            this.AlwsBtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.AlwsBtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             this.AlwsBtn.UncheckedState.BorderRadius = 3;
             this.AlwsBtn.UncheckedState.BorderThickness = 0;
-            this.AlwsBtn.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.AlwsBtn.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             // 
             // siticoneCheckBox3
             // 
             this.siticoneCheckBox3.AutoSize = true;
-            this.siticoneCheckBox3.CheckedState.BorderColor = System.Drawing.Color.Pink;
+            this.siticoneCheckBox3.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.siticoneCheckBox3.CheckedState.BorderRadius = 3;
             this.siticoneCheckBox3.CheckedState.BorderThickness = 0;
-            this.siticoneCheckBox3.CheckedState.FillColor = System.Drawing.Color.Pink;
+            this.siticoneCheckBox3.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.siticoneCheckBox3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneCheckBox3.ForeColor = System.Drawing.Color.White;
             this.siticoneCheckBox3.Location = new System.Drawing.Point(7, 56);
@@ -240,19 +240,19 @@
             this.siticoneCheckBox3.Size = new System.Drawing.Size(63, 19);
             this.siticoneCheckBox3.TabIndex = 2;
             this.siticoneCheckBox3.Text = "Blatant";
-            this.siticoneCheckBox3.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.siticoneCheckBox3.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             this.siticoneCheckBox3.UncheckedState.BorderRadius = 3;
             this.siticoneCheckBox3.UncheckedState.BorderThickness = 0;
-            this.siticoneCheckBox3.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.siticoneCheckBox3.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             this.siticoneCheckBox3.CheckedChanged += new System.EventHandler(this.siticoneCheckBox3_CheckedChanged);
             // 
             // ShiftBtn
             // 
             this.ShiftBtn.AutoSize = true;
-            this.ShiftBtn.CheckedState.BorderColor = System.Drawing.Color.Pink;
+            this.ShiftBtn.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.ShiftBtn.CheckedState.BorderRadius = 3;
             this.ShiftBtn.CheckedState.BorderThickness = 0;
-            this.ShiftBtn.CheckedState.FillColor = System.Drawing.Color.Pink;
+            this.ShiftBtn.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.ShiftBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ShiftBtn.ForeColor = System.Drawing.Color.White;
             this.ShiftBtn.Location = new System.Drawing.Point(7, 31);
@@ -260,18 +260,18 @@
             this.ShiftBtn.Size = new System.Drawing.Size(90, 19);
             this.ShiftBtn.TabIndex = 1;
             this.ShiftBtn.Text = "Shift disable";
-            this.ShiftBtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.ShiftBtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             this.ShiftBtn.UncheckedState.BorderRadius = 3;
             this.ShiftBtn.UncheckedState.BorderThickness = 0;
-            this.ShiftBtn.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.ShiftBtn.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             // 
             // smrtSwitch
             // 
             this.smrtSwitch.AutoSize = true;
-            this.smrtSwitch.CheckedState.BorderColor = System.Drawing.Color.Pink;
+            this.smrtSwitch.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.smrtSwitch.CheckedState.BorderRadius = 3;
             this.smrtSwitch.CheckedState.BorderThickness = 0;
-            this.smrtSwitch.CheckedState.FillColor = System.Drawing.Color.Pink;
+            this.smrtSwitch.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.smrtSwitch.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.smrtSwitch.ForeColor = System.Drawing.Color.White;
             this.smrtSwitch.Location = new System.Drawing.Point(6, 6);
@@ -279,14 +279,14 @@
             this.smrtSwitch.Size = new System.Drawing.Size(91, 19);
             this.smrtSwitch.TabIndex = 0;
             this.smrtSwitch.Text = "Smart mode";
-            this.smrtSwitch.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.smrtSwitch.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             this.smrtSwitch.UncheckedState.BorderRadius = 3;
             this.smrtSwitch.UncheckedState.BorderThickness = 0;
-            this.smrtSwitch.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.smrtSwitch.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             // 
             // yes
             // 
-            this.yes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
+            this.yes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(15)))), ((int)(((byte)(42)))));
             this.yes.HoveredState.Parent = this.yes;
             this.yes.IndicateFocus = false;
             this.yes.Location = new System.Drawing.Point(3, 202);
@@ -294,7 +294,7 @@
             this.yes.Name = "yes";
             this.yes.Size = new System.Drawing.Size(302, 11);
             this.yes.TabIndex = 6;
-            this.yes.ThumbColor = System.Drawing.Color.Pink;
+            this.yes.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.yes.Value = 10;
             this.yes.Visible = false;
             // 
@@ -316,12 +316,12 @@
             // 
             // slotL9
             // 
-            this.slotL9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(20)))));
+            this.slotL9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
             this.slotL9.Checked = true;
-            this.slotL9.CheckedState.BorderColor = System.Drawing.Color.Pink;
+            this.slotL9.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.slotL9.CheckedState.BorderRadius = 2;
             this.slotL9.CheckedState.BorderThickness = 0;
-            this.slotL9.CheckedState.FillColor = System.Drawing.Color.Pink;
+            this.slotL9.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.slotL9.CheckedState.Parent = this.slotL9;
             this.slotL9.CheckMarkColor = System.Drawing.Color.Empty;
             this.slotL9.Location = new System.Drawing.Point(234, 219);
@@ -329,20 +329,20 @@
             this.slotL9.Size = new System.Drawing.Size(15, 15);
             this.slotL9.TabIndex = 8;
             this.slotL9.Text = "slotL9";
-            this.slotL9.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.slotL9.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             this.slotL9.UncheckedState.BorderRadius = 2;
             this.slotL9.UncheckedState.BorderThickness = 0;
-            this.slotL9.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.slotL9.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             this.slotL9.UncheckedState.Parent = this.slotL9;
             // 
             // slotL8
             // 
-            this.slotL8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(20)))));
+            this.slotL8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
             this.slotL8.Checked = true;
-            this.slotL8.CheckedState.BorderColor = System.Drawing.Color.Pink;
+            this.slotL8.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.slotL8.CheckedState.BorderRadius = 2;
             this.slotL8.CheckedState.BorderThickness = 0;
-            this.slotL8.CheckedState.FillColor = System.Drawing.Color.Pink;
+            this.slotL8.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.slotL8.CheckedState.Parent = this.slotL8;
             this.slotL8.CheckMarkColor = System.Drawing.Color.Empty;
             this.slotL8.Location = new System.Drawing.Point(213, 219);
@@ -350,20 +350,20 @@
             this.slotL8.Size = new System.Drawing.Size(15, 15);
             this.slotL8.TabIndex = 9;
             this.slotL8.Text = "slotL8";
-            this.slotL8.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.slotL8.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             this.slotL8.UncheckedState.BorderRadius = 2;
             this.slotL8.UncheckedState.BorderThickness = 0;
-            this.slotL8.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.slotL8.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             this.slotL8.UncheckedState.Parent = this.slotL8;
             // 
             // slotL7
             // 
-            this.slotL7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(20)))));
+            this.slotL7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
             this.slotL7.Checked = true;
-            this.slotL7.CheckedState.BorderColor = System.Drawing.Color.Pink;
+            this.slotL7.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.slotL7.CheckedState.BorderRadius = 2;
             this.slotL7.CheckedState.BorderThickness = 0;
-            this.slotL7.CheckedState.FillColor = System.Drawing.Color.Pink;
+            this.slotL7.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.slotL7.CheckedState.Parent = this.slotL7;
             this.slotL7.CheckMarkColor = System.Drawing.Color.Empty;
             this.slotL7.Location = new System.Drawing.Point(192, 219);
@@ -371,20 +371,20 @@
             this.slotL7.Size = new System.Drawing.Size(15, 15);
             this.slotL7.TabIndex = 10;
             this.slotL7.Text = "slotL7";
-            this.slotL7.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.slotL7.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             this.slotL7.UncheckedState.BorderRadius = 2;
             this.slotL7.UncheckedState.BorderThickness = 0;
-            this.slotL7.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.slotL7.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             this.slotL7.UncheckedState.Parent = this.slotL7;
             // 
             // slotL6
             // 
-            this.slotL6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(20)))));
+            this.slotL6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
             this.slotL6.Checked = true;
-            this.slotL6.CheckedState.BorderColor = System.Drawing.Color.Pink;
+            this.slotL6.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.slotL6.CheckedState.BorderRadius = 2;
             this.slotL6.CheckedState.BorderThickness = 0;
-            this.slotL6.CheckedState.FillColor = System.Drawing.Color.Pink;
+            this.slotL6.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.slotL6.CheckedState.Parent = this.slotL6;
             this.slotL6.CheckMarkColor = System.Drawing.Color.Empty;
             this.slotL6.Location = new System.Drawing.Point(171, 219);
@@ -392,20 +392,20 @@
             this.slotL6.Size = new System.Drawing.Size(15, 15);
             this.slotL6.TabIndex = 11;
             this.slotL6.Text = "slotL6";
-            this.slotL6.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.slotL6.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             this.slotL6.UncheckedState.BorderRadius = 2;
             this.slotL6.UncheckedState.BorderThickness = 0;
-            this.slotL6.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.slotL6.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             this.slotL6.UncheckedState.Parent = this.slotL6;
             // 
             // slotL5
             // 
-            this.slotL5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(20)))));
+            this.slotL5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
             this.slotL5.Checked = true;
-            this.slotL5.CheckedState.BorderColor = System.Drawing.Color.Pink;
+            this.slotL5.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.slotL5.CheckedState.BorderRadius = 2;
             this.slotL5.CheckedState.BorderThickness = 0;
-            this.slotL5.CheckedState.FillColor = System.Drawing.Color.Pink;
+            this.slotL5.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.slotL5.CheckedState.Parent = this.slotL5;
             this.slotL5.CheckMarkColor = System.Drawing.Color.Empty;
             this.slotL5.Location = new System.Drawing.Point(150, 219);
@@ -413,20 +413,20 @@
             this.slotL5.Size = new System.Drawing.Size(15, 15);
             this.slotL5.TabIndex = 12;
             this.slotL5.Text = "slotL5";
-            this.slotL5.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.slotL5.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             this.slotL5.UncheckedState.BorderRadius = 2;
             this.slotL5.UncheckedState.BorderThickness = 0;
-            this.slotL5.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.slotL5.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             this.slotL5.UncheckedState.Parent = this.slotL5;
             // 
             // slotL4
             // 
-            this.slotL4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(20)))));
+            this.slotL4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
             this.slotL4.Checked = true;
-            this.slotL4.CheckedState.BorderColor = System.Drawing.Color.Pink;
+            this.slotL4.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.slotL4.CheckedState.BorderRadius = 2;
             this.slotL4.CheckedState.BorderThickness = 0;
-            this.slotL4.CheckedState.FillColor = System.Drawing.Color.Pink;
+            this.slotL4.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.slotL4.CheckedState.Parent = this.slotL4;
             this.slotL4.CheckMarkColor = System.Drawing.Color.Empty;
             this.slotL4.Location = new System.Drawing.Point(129, 219);
@@ -434,20 +434,20 @@
             this.slotL4.Size = new System.Drawing.Size(15, 15);
             this.slotL4.TabIndex = 13;
             this.slotL4.Text = "slotL4";
-            this.slotL4.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.slotL4.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             this.slotL4.UncheckedState.BorderRadius = 2;
             this.slotL4.UncheckedState.BorderThickness = 0;
-            this.slotL4.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.slotL4.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             this.slotL4.UncheckedState.Parent = this.slotL4;
             // 
             // slotL3
             // 
-            this.slotL3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(20)))));
+            this.slotL3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
             this.slotL3.Checked = true;
-            this.slotL3.CheckedState.BorderColor = System.Drawing.Color.Pink;
+            this.slotL3.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.slotL3.CheckedState.BorderRadius = 2;
             this.slotL3.CheckedState.BorderThickness = 0;
-            this.slotL3.CheckedState.FillColor = System.Drawing.Color.Pink;
+            this.slotL3.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.slotL3.CheckedState.Parent = this.slotL3;
             this.slotL3.CheckMarkColor = System.Drawing.Color.Empty;
             this.slotL3.Location = new System.Drawing.Point(108, 219);
@@ -455,20 +455,20 @@
             this.slotL3.Size = new System.Drawing.Size(15, 15);
             this.slotL3.TabIndex = 14;
             this.slotL3.Text = "slotL3";
-            this.slotL3.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.slotL3.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             this.slotL3.UncheckedState.BorderRadius = 2;
             this.slotL3.UncheckedState.BorderThickness = 0;
-            this.slotL3.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.slotL3.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             this.slotL3.UncheckedState.Parent = this.slotL3;
             // 
             // slotL2
             // 
-            this.slotL2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(20)))));
+            this.slotL2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
             this.slotL2.Checked = true;
-            this.slotL2.CheckedState.BorderColor = System.Drawing.Color.Pink;
+            this.slotL2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.slotL2.CheckedState.BorderRadius = 2;
             this.slotL2.CheckedState.BorderThickness = 0;
-            this.slotL2.CheckedState.FillColor = System.Drawing.Color.Pink;
+            this.slotL2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.slotL2.CheckedState.Parent = this.slotL2;
             this.slotL2.CheckMarkColor = System.Drawing.Color.Empty;
             this.slotL2.Location = new System.Drawing.Point(87, 219);
@@ -476,20 +476,20 @@
             this.slotL2.Size = new System.Drawing.Size(15, 15);
             this.slotL2.TabIndex = 15;
             this.slotL2.Text = "slotL2";
-            this.slotL2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.slotL2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             this.slotL2.UncheckedState.BorderRadius = 2;
             this.slotL2.UncheckedState.BorderThickness = 0;
-            this.slotL2.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.slotL2.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             this.slotL2.UncheckedState.Parent = this.slotL2;
             // 
             // slotL1
             // 
-            this.slotL1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(20)))));
+            this.slotL1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
             this.slotL1.Checked = true;
-            this.slotL1.CheckedState.BorderColor = System.Drawing.Color.Pink;
+            this.slotL1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.slotL1.CheckedState.BorderRadius = 2;
             this.slotL1.CheckedState.BorderThickness = 0;
-            this.slotL1.CheckedState.FillColor = System.Drawing.Color.Pink;
+            this.slotL1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
             this.slotL1.CheckedState.Parent = this.slotL1;
             this.slotL1.CheckMarkColor = System.Drawing.Color.Empty;
             this.slotL1.Location = new System.Drawing.Point(66, 219);
@@ -497,17 +497,17 @@
             this.slotL1.Size = new System.Drawing.Size(15, 15);
             this.slotL1.TabIndex = 16;
             this.slotL1.Text = "slotL1";
-            this.slotL1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.slotL1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             this.slotL1.UncheckedState.BorderRadius = 2;
             this.slotL1.UncheckedState.BorderThickness = 0;
-            this.slotL1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.slotL1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
             this.slotL1.UncheckedState.Parent = this.slotL1;
             // 
             // LeftClicker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(22)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(6)))), ((int)(((byte)(14)))));
             this.Controls.Add(this.slotL9);
             this.Controls.Add(this.slotL8);
             this.Controls.Add(this.slotL7);

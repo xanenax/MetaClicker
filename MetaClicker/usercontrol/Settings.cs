@@ -17,9 +17,9 @@ namespace MetaClicker.usercontrol
         [DllImport("User32.dll")]
         private static extern short GetAsyncKeyState(System.Windows.Forms.Keys vKey); // Keys enumeration
 
-        public int r = 255;
-        public int g = 192;
-        public int b = 203;
+        public int r = 139;
+        public int g = 61;
+        public int b = 255;
         public Settings()
         {
             InitializeComponent();

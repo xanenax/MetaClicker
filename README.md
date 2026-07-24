@@ -1,24 +1,30 @@
 # MetaClicker
 
 [![Build](https://github.com/xanenax/MetaClicker/actions/workflows/build.yml/badge.svg)](https://github.com/xanenax/MetaClicker/actions/workflows/build.yml)
+[![Website](https://img.shields.io/badge/Website-GitHub%20Pages-8b3dff)](https://xanenax.github.io/MetaClicker/)
 
-MetaClicker ist ein klassischer Windows-Autoclicker, der aus einem älteren
-.NET-Framework-Projekt wieder lauffähig gemacht wurde. Das Programm unterstützt
-getrennte Einstellungen für Links- und Rechtsklicks, Hotkeys und eine anpassbare
-Oberfläche.
+MetaClicker ist ein modernisiertes Open-Source-Autoclicker-Projekt für Windows.
+Das Projekt verbindet den Charakter der ursprünglichen Anwendung mit einer
+erneuerten technischen Basis, einem einheitlichen Schwarz-Violett-Design und
+einer transparenten Entwicklung auf GitHub.
 
-## Aktueller Stand
+Der Name **Meta** und das bekannte Logo bleiben erhalten. MetaClicker wird als
+offenes Spaßprojekt weiterentwickelt – ohne HWID-Prüfung, ohne externe
+Freigabeliste und mit nachvollziehbaren Versionen.
 
-- Windows x64
-- .NET Framework 4.8
-- HWID- und Pastefy-Abhängigkeit entfernt
-- kurzer lokaler Startbildschirm statt Online-Login
-- reproduzierbare Debug- und Release-Builds
+## Funktionen
+
+- getrennte Einstellungen für Links- und Rechtsklick
+- frei wählbare Hotkeys
+- anpassbare Standard-Akzentfarbe
+- weicher RGB-Modus, der bei der Standardfarbe beginnt
+- vollständig lokaler Start ohne Online-Login
+- reproduzierbare Windows-x64-Builds
 
 ## Download
 
-Fertige Versionen werden künftig unter
-[Releases](https://github.com/xanenax/MetaClicker/releases) veröffentlicht.
+Die aktuelle Windows-Version steht unter
+[GitHub Releases](https://github.com/xanenax/MetaClicker/releases/latest) bereit.
 
 ## Selbst bauen
 
@@ -37,18 +43,13 @@ nuget restore MetaClicker.sln
 msbuild MetaClicker.sln /p:Configuration=Release
 ```
 
-## Projektseite
+## Mitmachen
 
-Die kleine Projektseite wird nach der Aktivierung von GitHub Pages unter
-[xanenax.github.io/MetaClicker](https://xanenax.github.io/MetaClicker/) erreichbar
-sein.
-
-## Änderungen speichern
-
-Eine einfache deutschsprachige Anleitung für den täglichen Git-Ablauf steht in
+Fehlerberichte, Ideen und Verbesserungen sind willkommen. Eine einfache
+deutschsprachige Git-Anleitung steht in
 [GIT-ANLEITUNG.md](GIT-ANLEITUNG.md).
 
-## Hinweis
+## Technischer Hinweis
 
-Dieses Repository enthält ältere UI-Komponenten, die nur im 64-Bit-Modus stabil
-funktionieren. Deshalb ist das Projekt bewusst auf x64 eingestellt.
+Das Projekt enthält ältere UI-Komponenten, die im 64-Bit-Modus am stabilsten
+laufen. Deshalb ist MetaClicker bewusst auf Windows x64 eingestellt.

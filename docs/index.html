@@ -5,86 +5,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="MetaClicker – ein kompakter Windows-Autoclicker mit Hotkeys und getrennten Links- und Rechtsklick-Einstellungen."
+      content="MetaClicker ist ein modernisiertes Open-Source-Autoclicker-Projekt für Windows – lokal, transparent und ohne HWID-Login."
     >
-    <meta name="theme-color" content="#111114">
-    <title>MetaClicker — präzise, schnell, lokal</title>
+    <meta name="theme-color" content="#08060e">
+    <meta property="og:title" content="MetaClicker — neu gedacht, offen entwickelt">
+    <meta
+      property="og:description"
+      content="Ein modernisiertes Open-Source-Autoclicker-Projekt für Windows."
+    >
+    <meta property="og:image" content="https://xanenax.github.io/MetaClicker/og.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://xanenax.github.io/MetaClicker/">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>MetaClicker — neu gedacht, offen entwickelt</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div class="ambient ambient-one" aria-hidden="true"></div>
-    <div class="ambient ambient-two" aria-hidden="true"></div>
+    <div class="glow glow-one" aria-hidden="true"></div>
+    <div class="glow glow-two" aria-hidden="true"></div>
 
     <header class="site-header">
       <a class="brand" href="./" aria-label="MetaClicker Startseite">
         <span class="brand-mark">M</span>
-        <span>MetaClicker</span>
+        <span class="brand-name">Meta<span>Clicker</span></span>
       </a>
-      <a class="header-link" href="https://github.com/xanenax/MetaClicker">GitHub</a>
+      <nav aria-label="Hauptnavigation">
+        <a href="#features">Features</a>
+        <a href="#project">Projekt</a>
+        <a class="nav-github" href="https://github.com/xanenax/MetaClicker">GitHub</a>
+      </nav>
     </header>
 
     <main>
       <section class="hero">
-        <p class="eyebrow">Windows · x64 · Open Source</p>
-        <h1>Deine Klicks.<br><span>Dein Tempo.</span></h1>
-        <p class="intro">
-          Ein kompakter Windows-Autoclicker mit getrennten Profilen für Links-
-          und Rechtsklicks, frei wählbaren Hotkeys und einer ruhigen Oberfläche.
-        </p>
-        <div class="actions">
-          <a class="button primary" href="https://github.com/xanenax/MetaClicker/releases">
-            Releases ansehen
-          </a>
-          <a class="button secondary" href="https://github.com/xanenax/MetaClicker">
-            Quellcode öffnen
-          </a>
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Modernized open source</p>
+          <h1>Ein Klassiker.<br><em>Neu gedacht.</em></h1>
+          <p class="intro">
+            MetaClicker ist zurück: mit einem vollständig erneuerten
+            Schwarz-Violett-Design, lokalem Start und einer offenen,
+            nachvollziehbaren Entwicklung auf GitHub.
+          </p>
+          <div class="actions">
+            <a
+              class="button primary"
+              href="https://github.com/xanenax/MetaClicker/releases/latest"
+            >
+              Für Windows laden <span aria-hidden="true">→</span>
+            </a>
+            <a class="button secondary" href="https://github.com/xanenax/MetaClicker">
+              Quellcode ansehen
+            </a>
+          </div>
+          <div class="trust-row" aria-label="Projektinformationen">
+            <span><i aria-hidden="true"></i> Windows x64</span>
+            <span><i aria-hidden="true"></i> Ohne Online-Login</span>
+            <span><i aria-hidden="true"></i> Frei einsehbar</span>
+          </div>
         </div>
-        <div class="status" aria-label="Projektstatus">
-          <span class="status-dot" aria-hidden="true"></span>
-          Lokal nutzbar · ohne HWID- oder Online-Login
+
+        <div class="app-stage" aria-label="Vorschau der MetaClicker Oberfläche">
+          <div class="app-window">
+            <div class="app-sidebar">
+              <div class="mini-logo">M</div>
+              <button class="active" aria-label="Linksklick">L</button>
+              <button aria-label="Rechtsklick">R</button>
+              <button aria-label="Einstellungen">⚙</button>
+            </div>
+            <div class="app-content">
+              <div class="app-topline">
+                <div>
+                  <span class="app-kicker">META / LEFT CLICK</span>
+                  <strong>Linksklick</strong>
+                </div>
+                <span class="version">v1.1</span>
+              </div>
+              <div class="control-card">
+                <div class="control-head">
+                  <span>Klickgeschwindigkeit</span>
+                  <strong>12 CPS</strong>
+                </div>
+                <div class="slider"><span></span></div>
+              </div>
+              <div class="option-grid">
+                <div class="option"><span>Smart Mode</span><b class="switch on"></b></div>
+                <div class="option"><span>Shift Pause</span><b class="switch"></b></div>
+                <div class="option"><span>Break Blocks</span><b class="switch on"></b></div>
+                <div class="option"><span>Always Click</span><b class="switch"></b></div>
+              </div>
+              <button class="start-button">Aktivieren <span>[F6]</span></button>
+            </div>
+          </div>
+          <span class="stage-label">UNIFIED DESIGN SYSTEM · 2026</span>
         </div>
       </section>
 
-      <section class="features" aria-labelledby="features-title">
+      <section class="features" id="features" aria-labelledby="features-title">
         <div class="section-heading">
-          <p class="eyebrow">Funktionen</p>
-          <h2 id="features-title">Das Wesentliche, ohne Umwege.</h2>
+          <p class="eyebrow"><span></span> Was neu ist</p>
+          <h2 id="features-title">Weniger Altlast.<br>Mehr Meta.</h2>
         </div>
         <div class="feature-grid">
-          <article class="feature-card">
+          <article class="feature-card featured">
             <span class="feature-number">01</span>
-            <h3>Zwei Klickprofile</h3>
-            <p>Links- und Rechtsklick lassen sich unabhängig konfigurieren.</p>
+            <h3>Ein Design, überall</h3>
+            <p>
+              Anwendung und Website teilen jetzt dieselbe dunkle Oberfläche,
+              violette Akzente und eine klare visuelle Sprache.
+            </p>
           </article>
           <article class="feature-card">
             <span class="feature-number">02</span>
-            <h3>Schnelle Hotkeys</h3>
-            <p>Aktiviere deine Profile direkt über frei gewählte Tasten.</p>
+            <h3>RGB mit richtigem Start</h3>
+            <p>
+              Der Farbverlauf beginnt bei deiner Standardfarbe und wechselt
+              anschließend weich durch das gesamte Spektrum.
+            </p>
           </article>
           <article class="feature-card">
             <span class="feature-number">03</span>
-            <h3>Vollständig lokal</h3>
-            <p>Kein Konto, keine HWID-Prüfung und keine externe Freigabeliste.</p>
+            <h3>Lokal & transparent</h3>
+            <p>
+              Kein Konto, keine HWID-Prüfung und keine externe Freigabeliste.
+              Der vollständige Quellcode bleibt öffentlich nachvollziehbar.
+            </p>
           </article>
         </div>
       </section>
 
-      <section class="story">
-        <div>
-          <p class="eyebrow">Zurückgebracht</p>
-          <h2>Ein altes Projekt, wieder verlässlich gebaut.</h2>
+      <section class="project" id="project">
+        <div class="project-copy">
+          <p class="eyebrow"><span></span> Das Projekt</p>
+          <h2>Aus einem alten Tool wird ein gepflegtes Open-Source-Projekt.</h2>
         </div>
-        <p>
-          MetaClicker basiert auf .NET Framework 4.8. Veraltete Dateipfade,
-          fehlende Abhängigkeiten und die frühere Online-Anmeldung wurden
-          bereinigt. Jede weitere Änderung bleibt ab jetzt nachvollziehbar in Git.
-        </p>
+        <div class="project-story">
+          <p>
+            MetaClicker begann als persönliches Projekt auf einer älteren
+            technischen Basis. Heute wird es Schritt für Schritt modernisiert:
+            stabil gebaut, visuell vereinheitlicht und offen versioniert.
+          </p>
+          <p>
+            Der Name Meta und das bekannte Logo bleiben erhalten. Alles andere
+            darf sich weiterentwickeln – nachvollziehbar mit Releases, Build-
+            Historie und offenem Quellcode.
+          </p>
+          <a href="https://github.com/xanenax/MetaClicker">
+            Entwicklung auf GitHub verfolgen <span aria-hidden="true">↗</span>
+          </a>
+        </div>
       </section>
     </main>
 
     <footer>
-      <span>MetaClicker</span>
-      <span>Gebaut für Windows x64</span>
+      <a class="brand footer-brand" href="./">
+        <span class="brand-mark">M</span>
+        <span class="brand-name">Meta<span>Clicker</span></span>
+      </a>
+      <p>Ein erneuertes Open-Source-Spaßprojekt für Windows.</p>
+      <span>MetaClicker · 2026</span>
     </footer>
   </body>
 </html>

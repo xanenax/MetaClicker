@@ -26,7 +26,7 @@ namespace MetaClicker
         private void login_Load(object sender, EventArgs e)
         {
             startupStep = 0;
-            text.Text = "Starting";
+            text.Text = "Wird gestartet";
             timer.Start();
         }
 
@@ -36,7 +36,7 @@ namespace MetaClicker
 
             if (startupStep < 5)
             {
-                text.Text = "Starting" + new string('.', startupStep);
+                text.Text = "Wird gestartet" + new string('.', startupStep);
                 return;
             }
 
