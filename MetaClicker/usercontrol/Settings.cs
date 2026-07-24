@@ -23,6 +23,36 @@ namespace MetaClicker.usercontrol
         public Settings()
         {
             InitializeComponent();
+            Branding.StyleRoundedSurface(siticoneGradientPanel1, 12, Branding.Surface);
+            Branding.StyleRoundedSurface(siticoneGradientPanel2, 12, Branding.Surface);
+            HideBtn.BorderRadius = 8;
+
+            LayoutSliderRow(RValue, RSld, 11);
+            LayoutSliderRow(GValue, GSld, 48);
+            LayoutSliderRow(BValue, BSld, 85);
+            Branding.StyleSlider(RSld, Branding.Surface);
+            Branding.StyleSlider(GSld, Branding.Surface);
+            Branding.StyleSlider(BSld, Branding.Surface);
+
+            AlwaysontopBtn.BackColor = Branding.Surface;
+            RGBBtn.BackColor = Branding.Surface;
+            Branding.CreateSlashDecoration(
+                this,
+                new Rectangle(16, 164, 25, 27));
+            Branding.CreateDotDecoration(
+                this,
+                new Rectangle(278, 215, 21, 22));
+        }
+
+        private static void LayoutSliderRow(
+            Label valueLabel,
+            Control slider,
+            int labelY)
+        {
+            valueLabel.AutoSize = false;
+            valueLabel.BackColor = Branding.Surface;
+            valueLabel.SetBounds(8, labelY, 290, 17);
+            slider.SetBounds(8, labelY + 20, 290, 11);
         }
 
         private void Settings_Load(object sender, EventArgs e)

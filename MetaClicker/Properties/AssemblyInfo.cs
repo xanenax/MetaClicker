@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("MetaClicker")]
-[assembly: AssemblyDescription("Modernized open-source Windows autoclicker")]
+[assembly: AssemblyDescription("XANENAX open-source Windows autoclicker")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("XANENAX")]
 [assembly: AssemblyProduct("MetaClicker")]
 [assembly: AssemblyCopyright("MetaClicker contributors © 2026")]
 [assembly: AssemblyTrademark("")]

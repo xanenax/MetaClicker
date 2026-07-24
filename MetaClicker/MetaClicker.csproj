@@ -216,6 +216,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Branding.cs" />
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>

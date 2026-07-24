@@ -27,6 +27,37 @@ namespace MetaClicker.usercontrol
         public LeftClicker()
         {
             InitializeComponent();
+            Branding.StyleRoundedSurface(siticoneGradientPanel1, 12, Branding.Surface);
+            Branding.StyleRoundedSurface(siticoneGradientPanel2, 12, Branding.Surface);
+            ToggleLClicker.BorderRadius = 8;
+            bindbtn.BorderRadius = 8;
+            ToggleLClicker.SetBounds(8, 6, 290, 32);
+            CpsValue.AutoSize = false;
+            CpsValue.SetBounds(8, 41, 290, 17);
+            CpsValue.BackColor = Branding.Surface;
+            CPSsld.SetBounds(8, 61, 290, 11);
+            Branding.StyleSlider(CPSsld, Branding.Surface);
+
+            smrtSwitch.Location = new Point(8, 5);
+            ShiftBtn.Location = new Point(8, 30);
+            siticoneCheckBox3.Location = new Point(8, 55);
+            AlwsBtn.Location = new Point(160, 5);
+            BrkBnt.Location = new Point(160, 30);
+            RmbBtn.Location = new Point(160, 55);
+            bindbtn.SetBounds(8, 76, 290, 32);
+
+            foreach (Control option in new Control[]
+            {
+                smrtSwitch,
+                ShiftBtn,
+                siticoneCheckBox3,
+                AlwsBtn,
+                BrkBnt,
+                RmbBtn
+            })
+            {
+                option.BackColor = Branding.Surface;
+            }
         }
 
         
@@ -51,26 +82,6 @@ namespace MetaClicker.usercontrol
                         bindbtn.Text = "[" + e.KeyCode + "]";
                         break;
                 }
-        }
-        private void CPSsld_Paint(object sender, PaintEventArgs e)
-        {
-            SolidBrush brush = new SolidBrush(CPSsld.ThumbColor);
-            SolidBrush brushh = new SolidBrush(Color.White);
-
-            float f = CPSsld.Value / 10f;
-
-
-
-            Rectangle rec = e.ClipRectangle;
-            StringFormat drawFormat = new StringFormat();
-            rec.Width = (int)(rec.Width * ((double)(CPSsld.Value - CPSsld.Minimum) / (CPSsld.Maximum - CPSsld.Minimum))) - 4;
-            rec.Height = rec.Height - 4;
-            Font drawFont = new Font("Segoe UI", 9);
-            dynamic sld = (Siticone.UI.WinForms.SiticoneTrackBar)sender;
-            dynamic drawBrush = new SolidBrush(sld.FillColor);
-            e.Graphics.FillRectangle(drawBrush, e.ClipRectangle);
-            e.Graphics.FillRectangle(brush, 2, 2, rec.Width, rec.Height);
-            drawBrush.Dispose();
         }
         private void utils_Tick(object sender, EventArgs e)
         {

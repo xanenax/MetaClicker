@@ -13,7 +13,49 @@ namespace MetaClicker
         public login()
         {
             InitializeComponent();
-            Region = Region.FromHrgn(WinApi.CreateRoundRectRgn(0, 0, Width, Height, 15, 15));
+            Branding.ApplyRoundedCorners(this, 18);
+            BackColor = Branding.Background;
+            siticoneGradientPanel1.Location = new Point(8, 8);
+            siticoneGradientPanel1.Size = new Size(534, 49);
+            Branding.StyleRoundedSurface(siticoneGradientPanel1, 10, Branding.Surface);
+            Branding.StyleRoundedSurface(textBox, 12, Branding.Surface);
+            logo.Visible = false;
+            Branding.CreateMetallicMark(
+                siticoneGradientPanel1,
+                new Rectangle(245, 4, 43, 40));
+            Branding.CreateWindowButton(
+                siticoneGradientPanel1,
+                "–",
+                new Rectangle(472, 7, 25, 24),
+                false,
+                (sender, args) => WindowState = FormWindowState.Minimized);
+            Branding.CreateWindowButton(
+                siticoneGradientPanel1,
+                "×",
+                new Rectangle(500, 7, 25, 24),
+                true,
+                (sender, args) => Close());
+            Label loaderTitle = Branding.CreateLabel(
+                textBox,
+                "META CLICKER",
+                new Rectangle(12, 84, 308, 20),
+                9f,
+                FontStyle.Bold,
+                Color.White,
+                ContentAlignment.MiddleCenter);
+            loaderTitle.BackColor = Branding.Surface;
+            Branding.CreateMetallicMark(
+                textBox,
+                new Rectangle(126, 9, 80, 70));
+            text.Bounds = new Rectangle(12, 116, 308, 20);
+            text.BackColor = Branding.Surface;
+            text.ForeColor = Branding.Muted;
+            Branding.CreateSlashDecoration(
+                this,
+                new Rectangle(42, 115, 34, 24));
+            Branding.CreateDotDecoration(
+                this,
+                new Rectangle(472, 151, 31, 23));
             timer.Stop();
             timer.Interval = 250;
         }
@@ -26,7 +68,7 @@ namespace MetaClicker
         private void login_Load(object sender, EventArgs e)
         {
             startupStep = 0;
-            text.Text = "Wird gestartet";
+            text.Text = "Starting";
             timer.Start();
         }
 
@@ -36,7 +78,7 @@ namespace MetaClicker
 
             if (startupStep < 5)
             {
-                text.Text = "Wird gestartet" + new string('.', startupStep);
+                text.Text = "Starting" + new string('.', startupStep);
                 return;
             }
 

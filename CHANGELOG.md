@@ -1,22 +1,25 @@
-# Änderungsverlauf
+# Changelog
 
-Alle wichtigen Änderungen an MetaClicker werden hier dokumentiert.
+Only meaningful MetaClicker releases are listed here.
 
-## 1.1.0 – Unified Design
+## 1.1.0 – XANENAX Refresh
 
-- Anwendung vollständig auf ein Schwarz-Violett-Theme umgestellt
-- Startbildschirm an das neue Design angepasst
-- Website mit derselben visuellen Sprache neu gestaltet
-- Standard-Akzentfarbe auf Meta-Violett aktualisiert
-- RGB-Modus beginnt nun exakt bei der gewählten Standardfarbe
-- alte RGB-Timerlogik durch einen gleichmäßigen HSV-Farbverlauf ersetzt
-- Projektbeschreibung als modernisiertes Open-Source-Spaßprojekt erneuert
-- neue Social-Media-Vorschaugrafik für geteilte Projektlinks hinzugefügt
+- refreshed the app, startup screen, website, and documentation in one design system
+- added a metallic `M`, modern window controls, clean custom sliders, truly clipped concentric corners, offset accent slashes, dot details, and consistent panel spacing
+- moved the previous Self Destruct action to a clean window exit that stops clickers and timers first
+- translated the full project to English and reduced unnecessary copy
+- consolidated the redesign into one tested release instead of many minor design commits
 
-## 1.0.0 – Wiederherstellung
+## 1.0.5 – Unified Design
 
-- altes Projekt wieder buildfähig gemacht
-- veraltete Dateipfade und Abhängigkeiten korrigiert
-- HWID- und Pastefy-Anmeldung entfernt
-- kurzer lokaler Startbildschirm eingerichtet
-- Windows-x64-Build und GitHub-Automatisierung hinzugefügt
+- introduced the black and violet app theme
+- added a local startup screen without the old HWID login
+- made RGB mode begin at the selected base color
+- added the first matching GitHub Pages website
+
+## 1.0.0 – Recovery
+
+- restored the old project to a buildable state
+- repaired outdated paths and dependencies
+- removed the Pastefy-based login
+- added Windows x64 builds and GitHub automation

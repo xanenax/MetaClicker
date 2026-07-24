@@ -60,8 +60,8 @@ namespace MetaClicker.usercontrol
             // 
             // siticoneGradientPanel2
             // 
-            this.siticoneGradientPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
-            this.siticoneGradientPanel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(29)))), ((int)(((byte)(79)))));
+            this.siticoneGradientPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(8)))), ((int)(((byte)(18)))));
+            this.siticoneGradientPanel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(32)))), ((int)(((byte)(56)))));
             this.siticoneGradientPanel2.BorderRadius = 5;
             this.siticoneGradientPanel2.BorderThickness = 1;
             this.siticoneGradientPanel2.Controls.Add(this.bindbtn);
@@ -78,18 +78,18 @@ namespace MetaClicker.usercontrol
             // 
             // bindbtn
             // 
-            this.bindbtn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(23)))), ((int)(((byte)(68)))));
+            this.bindbtn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(35)))), ((int)(((byte)(76)))));
             this.bindbtn.BorderRadius = 5;
             this.bindbtn.BorderThickness = 1;
-            this.bindbtn.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
-            this.bindbtn.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.bindbtn.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
+            this.bindbtn.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.bindbtn.CheckedState.Parent = this.bindbtn;
             this.bindbtn.CustomImages.Parent = this.bindbtn;
-            this.bindbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.bindbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             this.bindbtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindbtn.ForeColor = System.Drawing.Color.White;
-            this.bindbtn.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
-            this.bindbtn.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
+            this.bindbtn.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
+            this.bindbtn.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(8)))), ((int)(((byte)(18)))));
             this.bindbtn.HoveredState.Parent = this.bindbtn;
             this.bindbtn.ImageOffset = new System.Drawing.Point(1, 0);
             this.bindbtn.ImageSize = new System.Drawing.Size(30, 30);
@@ -105,10 +105,10 @@ namespace MetaClicker.usercontrol
             // siticoneCheckBox4
             // 
             this.siticoneCheckBox4.AutoSize = true;
-            this.siticoneCheckBox4.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.siticoneCheckBox4.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.siticoneCheckBox4.CheckedState.BorderRadius = 3;
             this.siticoneCheckBox4.CheckedState.BorderThickness = 0;
-            this.siticoneCheckBox4.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.siticoneCheckBox4.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.siticoneCheckBox4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneCheckBox4.ForeColor = System.Drawing.Color.White;
             this.siticoneCheckBox4.Location = new System.Drawing.Point(164, 54);
@@ -116,18 +116,18 @@ namespace MetaClicker.usercontrol
             this.siticoneCheckBox4.Size = new System.Drawing.Size(67, 19);
             this.siticoneCheckBox4.TabIndex = 5;
             this.siticoneCheckBox4.Text = "Module";
-            this.siticoneCheckBox4.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.siticoneCheckBox4.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             this.siticoneCheckBox4.UncheckedState.BorderRadius = 3;
             this.siticoneCheckBox4.UncheckedState.BorderThickness = 0;
-            this.siticoneCheckBox4.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.siticoneCheckBox4.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             // 
             // eatBtn
             // 
             this.eatBtn.AutoSize = true;
-            this.eatBtn.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.eatBtn.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.eatBtn.CheckedState.BorderRadius = 3;
             this.eatBtn.CheckedState.BorderThickness = 0;
-            this.eatBtn.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.eatBtn.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.eatBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eatBtn.ForeColor = System.Drawing.Color.White;
             this.eatBtn.Location = new System.Drawing.Point(164, 29);
@@ -135,18 +135,18 @@ namespace MetaClicker.usercontrol
             this.eatBtn.Size = new System.Drawing.Size(117, 19);
             this.eatBtn.TabIndex = 4;
             this.eatBtn.Text = "Eat while clicking";
-            this.eatBtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.eatBtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             this.eatBtn.UncheckedState.BorderRadius = 3;
             this.eatBtn.UncheckedState.BorderThickness = 0;
-            this.eatBtn.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.eatBtn.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             // 
             // AlwsBtn
             // 
             this.AlwsBtn.AutoSize = true;
-            this.AlwsBtn.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.AlwsBtn.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.AlwsBtn.CheckedState.BorderRadius = 3;
             this.AlwsBtn.CheckedState.BorderThickness = 0;
-            this.AlwsBtn.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.AlwsBtn.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.AlwsBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AlwsBtn.ForeColor = System.Drawing.Color.White;
             this.AlwsBtn.Location = new System.Drawing.Point(163, 4);
@@ -154,19 +154,19 @@ namespace MetaClicker.usercontrol
             this.AlwsBtn.Size = new System.Drawing.Size(80, 19);
             this.AlwsBtn.TabIndex = 3;
             this.AlwsBtn.Text = "Always on";
-            this.AlwsBtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.AlwsBtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             this.AlwsBtn.UncheckedState.BorderRadius = 3;
             this.AlwsBtn.UncheckedState.BorderThickness = 0;
-            this.AlwsBtn.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.AlwsBtn.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             this.AlwsBtn.CheckedChanged += new System.EventHandler(this.AlwsBtn_CheckedChanged);
             // 
             // BlntBtn
             // 
             this.BlntBtn.AutoSize = true;
-            this.BlntBtn.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.BlntBtn.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.BlntBtn.CheckedState.BorderRadius = 3;
             this.BlntBtn.CheckedState.BorderThickness = 0;
-            this.BlntBtn.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.BlntBtn.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.BlntBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BlntBtn.ForeColor = System.Drawing.Color.White;
             this.BlntBtn.Location = new System.Drawing.Point(7, 56);
@@ -174,19 +174,19 @@ namespace MetaClicker.usercontrol
             this.BlntBtn.Size = new System.Drawing.Size(63, 19);
             this.BlntBtn.TabIndex = 2;
             this.BlntBtn.Text = "Blatant";
-            this.BlntBtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.BlntBtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             this.BlntBtn.UncheckedState.BorderRadius = 3;
             this.BlntBtn.UncheckedState.BorderThickness = 0;
-            this.BlntBtn.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.BlntBtn.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             this.BlntBtn.CheckedChanged += new System.EventHandler(this.BlntBtn_CheckedChanged);
             // 
             // ShiftBtn
             // 
             this.ShiftBtn.AutoSize = true;
-            this.ShiftBtn.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.ShiftBtn.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.ShiftBtn.CheckedState.BorderRadius = 3;
             this.ShiftBtn.CheckedState.BorderThickness = 0;
-            this.ShiftBtn.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.ShiftBtn.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.ShiftBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ShiftBtn.ForeColor = System.Drawing.Color.White;
             this.ShiftBtn.Location = new System.Drawing.Point(7, 31);
@@ -194,18 +194,18 @@ namespace MetaClicker.usercontrol
             this.ShiftBtn.Size = new System.Drawing.Size(90, 19);
             this.ShiftBtn.TabIndex = 1;
             this.ShiftBtn.Text = "Shift disable";
-            this.ShiftBtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.ShiftBtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             this.ShiftBtn.UncheckedState.BorderRadius = 3;
             this.ShiftBtn.UncheckedState.BorderThickness = 0;
-            this.ShiftBtn.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.ShiftBtn.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             // 
             // smrtSwitch
             // 
             this.smrtSwitch.AutoSize = true;
-            this.smrtSwitch.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.smrtSwitch.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.smrtSwitch.CheckedState.BorderRadius = 3;
             this.smrtSwitch.CheckedState.BorderThickness = 0;
-            this.smrtSwitch.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.smrtSwitch.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.smrtSwitch.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.smrtSwitch.ForeColor = System.Drawing.Color.White;
             this.smrtSwitch.Location = new System.Drawing.Point(6, 6);
@@ -213,15 +213,15 @@ namespace MetaClicker.usercontrol
             this.smrtSwitch.Size = new System.Drawing.Size(91, 19);
             this.smrtSwitch.TabIndex = 0;
             this.smrtSwitch.Text = "Smart mode";
-            this.smrtSwitch.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.smrtSwitch.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             this.smrtSwitch.UncheckedState.BorderRadius = 3;
             this.smrtSwitch.UncheckedState.BorderThickness = 0;
-            this.smrtSwitch.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.smrtSwitch.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             // 
             // siticoneGradientPanel1
             // 
-            this.siticoneGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
-            this.siticoneGradientPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(29)))), ((int)(((byte)(79)))));
+            this.siticoneGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(8)))), ((int)(((byte)(18)))));
+            this.siticoneGradientPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(32)))), ((int)(((byte)(56)))));
             this.siticoneGradientPanel1.BorderRadius = 5;
             this.siticoneGradientPanel1.BorderThickness = 1;
             this.siticoneGradientPanel1.Controls.Add(this.CPSsld);
@@ -234,7 +234,7 @@ namespace MetaClicker.usercontrol
             // 
             // CPSsld
             // 
-            this.CPSsld.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(15)))), ((int)(((byte)(42)))));
+            this.CPSsld.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(17)))), ((int)(((byte)(44)))));
             this.CPSsld.HoveredState.Parent = this.CPSsld;
             this.CPSsld.IndicateFocus = false;
             this.CPSsld.Location = new System.Drawing.Point(2, 59);
@@ -243,25 +243,24 @@ namespace MetaClicker.usercontrol
             this.CPSsld.Name = "CPSsld";
             this.CPSsld.Size = new System.Drawing.Size(302, 11);
             this.CPSsld.TabIndex = 5;
-            this.CPSsld.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.CPSsld.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.CPSsld.Value = 10;
-            this.CPSsld.Paint += new System.Windows.Forms.PaintEventHandler(this.CPSsld_Paint);
             // 
             // ToggleLClicker
             // 
-            this.ToggleLClicker.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(23)))), ((int)(((byte)(68)))));
+            this.ToggleLClicker.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(35)))), ((int)(((byte)(76)))));
             this.ToggleLClicker.BorderRadius = 5;
             this.ToggleLClicker.BorderThickness = 1;
             this.ToggleLClicker.ButtonMode = Siticone.UI.WinForms.Enums.ButtonMode.ToogleButton;
-            this.ToggleLClicker.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
-            this.ToggleLClicker.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.ToggleLClicker.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
+            this.ToggleLClicker.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.ToggleLClicker.CheckedState.Parent = this.ToggleLClicker;
             this.ToggleLClicker.CustomImages.Parent = this.ToggleLClicker;
-            this.ToggleLClicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.ToggleLClicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             this.ToggleLClicker.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.ToggleLClicker.ForeColor = System.Drawing.Color.White;
-            this.ToggleLClicker.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
-            this.ToggleLClicker.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
+            this.ToggleLClicker.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
+            this.ToggleLClicker.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(8)))), ((int)(((byte)(18)))));
             this.ToggleLClicker.HoveredState.Parent = this.ToggleLClicker;
             this.ToggleLClicker.ImageOffset = new System.Drawing.Point(1, 0);
             this.ToggleLClicker.ImageSize = new System.Drawing.Size(30, 30);
@@ -302,7 +301,7 @@ namespace MetaClicker.usercontrol
             // 
             // yes
             // 
-            this.yes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(15)))), ((int)(((byte)(42)))));
+            this.yes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(17)))), ((int)(((byte)(44)))));
             this.yes.HoveredState.Parent = this.yes;
             this.yes.IndicateFocus = false;
             this.yes.Location = new System.Drawing.Point(5, 202);
@@ -310,18 +309,18 @@ namespace MetaClicker.usercontrol
             this.yes.Name = "yes";
             this.yes.Size = new System.Drawing.Size(302, 11);
             this.yes.TabIndex = 6;
-            this.yes.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.yes.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.yes.Value = 10;
             this.yes.Visible = false;
             // 
             // slotR9
             // 
-            this.slotR9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
+            this.slotR9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(8)))), ((int)(((byte)(18)))));
             this.slotR9.Checked = true;
-            this.slotR9.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.slotR9.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.slotR9.CheckedState.BorderRadius = 2;
             this.slotR9.CheckedState.BorderThickness = 0;
-            this.slotR9.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.slotR9.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.slotR9.CheckedState.Parent = this.slotR9;
             this.slotR9.CheckMarkColor = System.Drawing.Color.Empty;
             this.slotR9.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -329,20 +328,20 @@ namespace MetaClicker.usercontrol
             this.slotR9.Name = "slotR9";
             this.slotR9.Size = new System.Drawing.Size(15, 15);
             this.slotR9.TabIndex = 17;
-            this.slotR9.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.slotR9.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             this.slotR9.UncheckedState.BorderRadius = 2;
             this.slotR9.UncheckedState.BorderThickness = 0;
-            this.slotR9.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.slotR9.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             this.slotR9.UncheckedState.Parent = this.slotR9;
             // 
             // slotR8
             // 
-            this.slotR8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
+            this.slotR8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(8)))), ((int)(((byte)(18)))));
             this.slotR8.Checked = true;
-            this.slotR8.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.slotR8.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.slotR8.CheckedState.BorderRadius = 2;
             this.slotR8.CheckedState.BorderThickness = 0;
-            this.slotR8.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.slotR8.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.slotR8.CheckedState.Parent = this.slotR8;
             this.slotR8.CheckMarkColor = System.Drawing.Color.Empty;
             this.slotR8.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -350,20 +349,20 @@ namespace MetaClicker.usercontrol
             this.slotR8.Name = "slotR8";
             this.slotR8.Size = new System.Drawing.Size(15, 15);
             this.slotR8.TabIndex = 18;
-            this.slotR8.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.slotR8.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             this.slotR8.UncheckedState.BorderRadius = 2;
             this.slotR8.UncheckedState.BorderThickness = 0;
-            this.slotR8.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.slotR8.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             this.slotR8.UncheckedState.Parent = this.slotR8;
             // 
             // slotR7
             // 
-            this.slotR7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
+            this.slotR7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(8)))), ((int)(((byte)(18)))));
             this.slotR7.Checked = true;
-            this.slotR7.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.slotR7.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.slotR7.CheckedState.BorderRadius = 2;
             this.slotR7.CheckedState.BorderThickness = 0;
-            this.slotR7.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.slotR7.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.slotR7.CheckedState.Parent = this.slotR7;
             this.slotR7.CheckMarkColor = System.Drawing.Color.Empty;
             this.slotR7.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -371,20 +370,20 @@ namespace MetaClicker.usercontrol
             this.slotR7.Name = "slotR7";
             this.slotR7.Size = new System.Drawing.Size(15, 15);
             this.slotR7.TabIndex = 19;
-            this.slotR7.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.slotR7.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             this.slotR7.UncheckedState.BorderRadius = 2;
             this.slotR7.UncheckedState.BorderThickness = 0;
-            this.slotR7.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.slotR7.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             this.slotR7.UncheckedState.Parent = this.slotR7;
             // 
             // slotR6
             // 
-            this.slotR6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
+            this.slotR6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(8)))), ((int)(((byte)(18)))));
             this.slotR6.Checked = true;
-            this.slotR6.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.slotR6.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.slotR6.CheckedState.BorderRadius = 2;
             this.slotR6.CheckedState.BorderThickness = 0;
-            this.slotR6.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.slotR6.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.slotR6.CheckedState.Parent = this.slotR6;
             this.slotR6.CheckMarkColor = System.Drawing.Color.Empty;
             this.slotR6.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -392,20 +391,20 @@ namespace MetaClicker.usercontrol
             this.slotR6.Name = "slotR6";
             this.slotR6.Size = new System.Drawing.Size(15, 15);
             this.slotR6.TabIndex = 20;
-            this.slotR6.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.slotR6.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             this.slotR6.UncheckedState.BorderRadius = 2;
             this.slotR6.UncheckedState.BorderThickness = 0;
-            this.slotR6.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.slotR6.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             this.slotR6.UncheckedState.Parent = this.slotR6;
             // 
             // slotR5
             // 
-            this.slotR5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
+            this.slotR5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(8)))), ((int)(((byte)(18)))));
             this.slotR5.Checked = true;
-            this.slotR5.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.slotR5.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.slotR5.CheckedState.BorderRadius = 2;
             this.slotR5.CheckedState.BorderThickness = 0;
-            this.slotR5.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.slotR5.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.slotR5.CheckedState.Parent = this.slotR5;
             this.slotR5.CheckMarkColor = System.Drawing.Color.Empty;
             this.slotR5.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -413,20 +412,20 @@ namespace MetaClicker.usercontrol
             this.slotR5.Name = "slotR5";
             this.slotR5.Size = new System.Drawing.Size(15, 15);
             this.slotR5.TabIndex = 21;
-            this.slotR5.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.slotR5.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             this.slotR5.UncheckedState.BorderRadius = 2;
             this.slotR5.UncheckedState.BorderThickness = 0;
-            this.slotR5.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.slotR5.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             this.slotR5.UncheckedState.Parent = this.slotR5;
             // 
             // slotR4
             // 
-            this.slotR4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
+            this.slotR4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(8)))), ((int)(((byte)(18)))));
             this.slotR4.Checked = true;
-            this.slotR4.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.slotR4.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.slotR4.CheckedState.BorderRadius = 2;
             this.slotR4.CheckedState.BorderThickness = 0;
-            this.slotR4.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.slotR4.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.slotR4.CheckedState.Parent = this.slotR4;
             this.slotR4.CheckMarkColor = System.Drawing.Color.Empty;
             this.slotR4.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -434,20 +433,20 @@ namespace MetaClicker.usercontrol
             this.slotR4.Name = "slotR4";
             this.slotR4.Size = new System.Drawing.Size(15, 15);
             this.slotR4.TabIndex = 22;
-            this.slotR4.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.slotR4.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             this.slotR4.UncheckedState.BorderRadius = 2;
             this.slotR4.UncheckedState.BorderThickness = 0;
-            this.slotR4.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.slotR4.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             this.slotR4.UncheckedState.Parent = this.slotR4;
             // 
             // slotR3
             // 
-            this.slotR3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
+            this.slotR3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(8)))), ((int)(((byte)(18)))));
             this.slotR3.Checked = true;
-            this.slotR3.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.slotR3.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.slotR3.CheckedState.BorderRadius = 2;
             this.slotR3.CheckedState.BorderThickness = 0;
-            this.slotR3.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.slotR3.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.slotR3.CheckedState.Parent = this.slotR3;
             this.slotR3.CheckMarkColor = System.Drawing.Color.Empty;
             this.slotR3.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -455,20 +454,20 @@ namespace MetaClicker.usercontrol
             this.slotR3.Name = "slotR3";
             this.slotR3.Size = new System.Drawing.Size(15, 15);
             this.slotR3.TabIndex = 23;
-            this.slotR3.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.slotR3.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             this.slotR3.UncheckedState.BorderRadius = 2;
             this.slotR3.UncheckedState.BorderThickness = 0;
-            this.slotR3.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.slotR3.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             this.slotR3.UncheckedState.Parent = this.slotR3;
             // 
             // slotR2
             // 
-            this.slotR2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
+            this.slotR2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(8)))), ((int)(((byte)(18)))));
             this.slotR2.Checked = true;
-            this.slotR2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.slotR2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.slotR2.CheckedState.BorderRadius = 2;
             this.slotR2.CheckedState.BorderThickness = 0;
-            this.slotR2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.slotR2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.slotR2.CheckedState.Parent = this.slotR2;
             this.slotR2.CheckMarkColor = System.Drawing.Color.Empty;
             this.slotR2.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -476,20 +475,20 @@ namespace MetaClicker.usercontrol
             this.slotR2.Name = "slotR2";
             this.slotR2.Size = new System.Drawing.Size(15, 15);
             this.slotR2.TabIndex = 24;
-            this.slotR2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.slotR2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             this.slotR2.UncheckedState.BorderRadius = 2;
             this.slotR2.UncheckedState.BorderThickness = 0;
-            this.slotR2.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.slotR2.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             this.slotR2.UncheckedState.Parent = this.slotR2;
             // 
             // slotR1
             // 
-            this.slotR1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(9)))), ((int)(((byte)(24)))));
+            this.slotR1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(8)))), ((int)(((byte)(18)))));
             this.slotR1.Checked = true;
-            this.slotR1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.slotR1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.slotR1.CheckedState.BorderRadius = 2;
             this.slotR1.CheckedState.BorderThickness = 0;
-            this.slotR1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(61)))), ((int)(((byte)(255)))));
+            this.slotR1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(53)))), ((int)(((byte)(255)))));
             this.slotR1.CheckedState.Parent = this.slotR1;
             this.slotR1.CheckMarkColor = System.Drawing.Color.Empty;
             this.slotR1.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -497,17 +496,17 @@ namespace MetaClicker.usercontrol
             this.slotR1.Name = "slotR1";
             this.slotR1.Size = new System.Drawing.Size(15, 15);
             this.slotR1.TabIndex = 25;
-            this.slotR1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.slotR1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             this.slotR1.UncheckedState.BorderRadius = 2;
             this.slotR1.UncheckedState.BorderThickness = 0;
-            this.slotR1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(11)))), ((int)(((byte)(31)))));
+            this.slotR1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             this.slotR1.UncheckedState.Parent = this.slotR1;
             // 
             // RightClicker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(6)))), ((int)(((byte)(14)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(4)))), ((int)(((byte)(10)))));
             this.Controls.Add(this.slotR9);
             this.Controls.Add(this.slotR8);
             this.Controls.Add(this.slotR7);

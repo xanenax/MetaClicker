@@ -18,12 +18,53 @@ namespace MetaClicker
         private double rainbowHue;
         private double rainbowSaturation;
         private double rainbowValue;
+        private bool exiting;
 
         public main()
         {
             InitializeComponent();
-            Region = Region.FromHrgn(WinApi.CreateRoundRectRgn(0, 0, Width, Height, 15, 15));
-
+            Branding.ApplyRoundedCorners(this, 18);
+            BackColor = Branding.Background;
+            siticoneGradientPanel1.Location = new Point(8, 8);
+            siticoneGradientPanel1.Size = new Size(57, 284);
+            Branding.StyleRoundedSurface(siticoneGradientPanel1, 10, Branding.Surface);
+            settings1.Location = new Point(118, 15);
+            LeftClickerTab.BorderRadius = 9;
+            RightClickerTab.BorderRadius = 9;
+            SettingsTab.BorderRadius = 9;
+            logo.Visible = false;
+            Branding.CreateMetallicMark(
+                siticoneGradientPanel1,
+                new Rectangle(7, 5, 43, 40));
+            Branding.CreateWindowButton(
+                this,
+                "–",
+                new Rectangle(486, 5, 27, 24),
+                false,
+                (sender, args) => WindowState = FormWindowState.Minimized);
+            Branding.CreateWindowButton(
+                this,
+                "×",
+                new Rectangle(516, 5, 27, 24),
+                true,
+                (sender, args) => ExitApplication());
+            Branding.CreateLabel(
+                this,
+                "v1.1",
+                new Rectangle(492, 279, 38, 12),
+                6.5f,
+                FontStyle.Bold,
+                Branding.Muted,
+                ContentAlignment.MiddleRight);
+            Branding.CreateSlashDecoration(
+                this,
+                new Rectangle(76, 16, 34, 24));
+            Branding.CreateSlashDecoration(
+                this,
+                new Rectangle(458, 58, 31, 21));
+            Branding.CreateDotDecoration(
+                this,
+                new Rectangle(474, 224, 31, 23));
             leftClicker1.smrtSwitch.Checked = true;
             rightClicker1.smrtSwitch.Checked = true;
             rightClicker1.Hide();
@@ -43,7 +84,6 @@ namespace MetaClicker
 
         private void ApplyAccentColor(Color accent)
         {
-            logo.ForeColor = accent;
             leftClicker1.CPSsld.ThumbColor = accent;
             rightClicker1.CPSsld.ThumbColor = accent;
 
@@ -85,8 +125,7 @@ namespace MetaClicker
                 leftClicker1.ToggleLClicker,
                 rightClicker1.bindbtn,
                 rightClicker1.ToggleLClicker,
-                settings1.HideBtn,
-                settings1.SelfdestructBtn
+                settings1.HideBtn
             };
 
             foreach (var button in actionButtons)
@@ -335,17 +374,30 @@ namespace MetaClicker
                 while (WinApi.GetAsyncKeyState(rightClicker1.Biind) != 0) Task.Delay(20);
             }
 
-            if (settings1.SelfdestructBtn.Checked)
-            {
-                foreach (Control currentControl in Controls)
-                {
-                    currentControl.Dispose();
-                }
+        }
 
-                Task.Delay(1000).Wait();
-                Dispose();
-                Environment.Exit(0);
+        private void ExitApplication()
+        {
+            if (exiting)
+            {
+                return;
             }
+
+            exiting = true;
+            timerR.Stop();
+            timerG.Stop();
+            timerB.Stop();
+            colorTick.Stop();
+            utils.Stop();
+            rainbowActive = false;
+            TopMost = false;
+
+            leftClicker1.ToggleLClicker.Checked = false;
+            rightClicker1.ToggleLClicker.Checked = false;
+            settings1.RGBBtn.Checked = false;
+
+            Hide();
+            Application.Exit();
         }
 
         private void timerR_Tick(object sender, EventArgs e)
@@ -361,10 +413,6 @@ namespace MetaClicker
         private void timerB_Tick(object sender, EventArgs e)
         {
             AdvanceRainbow();
-        }
-
-        private void siticoneGradientPanel1_Paint(object sender, PaintEventArgs e)
-        {
         }
 
         private void settings1_Load(object sender, EventArgs e)
