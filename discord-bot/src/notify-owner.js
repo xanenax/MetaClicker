@@ -17,8 +17,32 @@ const dmChannel = await rest.post(Routes.userChannels(), {
   body: { recipient_id: guild.owner_id },
 });
 
-await rest.post(Routes.channelMessages(dmChannel.id), {
-  body: { content: `🔔 **Codex needs you**\n${message}` },
+const notificationPrefix = "🔔 **Codex update**";
+const managedPrefixes = [
+  notificationPrefix,
+  "🔔 **Codex needs you**",
+];
+const sentMessage = await rest.post(Routes.channelMessages(dmChannel.id), {
+  body: { content: `${notificationPrefix}\n${message}` },
 });
 
-console.log("Owner notification sent.");
+const recentMessages = await rest.get(Routes.channelMessages(dmChannel.id), {
+  query: new URLSearchParams({ limit: "50" }),
+});
+
+const oldNotifications = recentMessages.filter(
+  (candidate) =>
+    candidate.id !== sentMessage.id &&
+    candidate.author.id === sentMessage.author.id &&
+    managedPrefixes.some((prefix) => candidate.content.startsWith(prefix)),
+);
+
+for (const oldNotification of oldNotifications) {
+  await rest.delete(
+    Routes.channelMessage(dmChannel.id, oldNotification.id),
+  );
+}
+
+console.log(
+  `Owner notification sent; removed ${oldNotifications.length} older notification(s).`,
+);

@@ -36,3 +36,5 @@ To send the server owner a private Discord notification when Codex needs help:
 ```powershell
 npm run notify-owner -- "Please open the current Codex task."
 ```
+
+Managed Codex notifications are private, and the helper removes older managed notifications so only the latest one remains.
