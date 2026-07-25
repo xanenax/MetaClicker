@@ -1,6 +1,10 @@
 import {
+  ActionRowBuilder,
+  ButtonBuilder,
+  ButtonStyle,
   ChannelType,
   EmbedBuilder,
+  MessageType,
   PermissionFlagsBits,
 } from "discord.js";
 
@@ -112,6 +116,62 @@ function staffOverwrites(guild, roles) {
       ],
     },
   ];
+}
+
+function memberCategoryOverwrites(guild, roles) {
+  const visibleTo = [
+    roles.creator,
+    roles.staff,
+    roles.support,
+    roles.tester,
+    roles.member,
+  ];
+
+  return [
+    {
+      id: guild.roles.everyone.id,
+      deny: [PermissionFlagsBits.ViewChannel],
+    },
+    ...visibleTo.map((role) => ({
+      id: role.id,
+      allow: [
+        PermissionFlagsBits.ViewChannel,
+        PermissionFlagsBits.ReadMessageHistory,
+      ],
+    })),
+    {
+      id: guild.members.me.id,
+      allow: [
+        PermissionFlagsBits.ViewChannel,
+        PermissionFlagsBits.SendMessages,
+        PermissionFlagsBits.EmbedLinks,
+        PermissionFlagsBits.ReadMessageHistory,
+      ],
+    },
+  ];
+}
+
+function memberReadOnlyOverwrites(guild, roles) {
+  return memberCategoryOverwrites(guild, roles).map((overwrite) => {
+    if (overwrite.id === guild.roles.everyone.id) {
+      return {
+        ...overwrite,
+        deny: [
+          PermissionFlagsBits.ViewChannel,
+          PermissionFlagsBits.SendMessages,
+        ],
+      };
+    }
+
+    if (overwrite.id === guild.members.me.id) {
+      return overwrite;
+    }
+
+    return {
+      ...overwrite,
+      deny: [PermissionFlagsBits.SendMessages],
+    };
+  });
 }
 
 async function ensureRole(guild, definition) {
@@ -228,7 +288,7 @@ async function removeEmptyDefaultCategories(guild) {
   }
 }
 
-async function ensureSeedMessage(channel, marker, embed) {
+async function ensureSeedMessage(channel, marker, embed, components = []) {
   if (!channel?.isTextBased()) {
     return;
   }
@@ -241,7 +301,35 @@ async function ensureSeedMessage(channel, marker, embed) {
   );
 
   if (!alreadyExists) {
-    await channel.send({ embeds: [embed] });
+    await channel.send({ embeds: [embed], components });
+  }
+}
+
+async function deleteLegacyJoinLog(guild) {
+  const legacyChannel = guild.channels.cache.find(
+    (channel) =>
+      channel.type === ChannelType.GuildText &&
+      channel.name === "join-log" &&
+      channel.parent?.name === "STAFF",
+  );
+
+  if (legacyChannel?.deletable) {
+    await legacyChannel.delete(MANAGED_REASON);
+  }
+}
+
+async function removeNativeJoinMessages(channel) {
+  if (!channel?.isTextBased()) {
+    return;
+  }
+
+  const recentMessages = await channel.messages.fetch({ limit: 100 });
+  const nativeJoinMessages = recentMessages.filter(
+    (message) => message.type === MessageType.UserJoin && message.deletable,
+  );
+
+  for (const message of nativeJoinMessages.values()) {
+    await message.delete();
   }
 }
 
@@ -278,6 +366,18 @@ export async function setupServer(guild, config) {
     topic: "Short, clear community rules.",
     permissionOverwrites: readOnlyOverwrites(guild),
   });
+  channels.verify = await ensureChannel(guild, categories.start, {
+    name: "verify",
+    type: ChannelType.GuildText,
+    topic: "Verify once to unlock the MetaClicker community.",
+    permissionOverwrites: readOnlyOverwrites(guild),
+  });
+  channels.joined = await ensureChannel(guild, categories.start, {
+    name: "joined",
+    type: ChannelType.GuildText,
+    topic: "Custom welcome messages for new community members.",
+    permissionOverwrites: readOnlyOverwrites(guild),
+  });
   channels.announcements = await ensureChannel(guild, categories.start, {
     name: "announcements",
     type: ChannelType.GuildText,
@@ -285,68 +385,86 @@ export async function setupServer(guild, config) {
     permissionOverwrites: readOnlyOverwrites(guild),
   });
 
-  categories.meta = await ensureCategory(guild, "META CLICKER");
+  const memberOnly = memberCategoryOverwrites(guild, roles);
+  const memberReadOnly = memberReadOnlyOverwrites(guild, roles);
+
+  categories.meta = await ensureCategory(
+    guild,
+    "META CLICKER",
+    memberOnly,
+  );
   channels.updates = await ensureChannel(guild, categories.meta, {
     name: "metaclicker-updates",
     type: ChannelType.GuildText,
     topic: "Release notes, fixes, and development updates.",
-    permissionOverwrites: readOnlyOverwrites(guild),
+    permissionOverwrites: memberReadOnly,
   });
   channels.downloads = await ensureChannel(guild, categories.meta, {
     name: "downloads",
     type: ChannelType.GuildText,
     topic: "Official MetaClicker downloads only.",
-    permissionOverwrites: readOnlyOverwrites(guild),
+    permissionOverwrites: memberReadOnly,
   });
   channels.support = await ensureChannel(guild, categories.meta, {
     name: "support",
     type: ChannelType.GuildText,
     topic: "Get help with installation, settings, or usage.",
     rateLimitPerUser: 5,
+    permissionOverwrites: memberOnly,
   });
   channels.bugs = await ensureChannel(guild, categories.meta, {
     name: "bug-reports",
     type: ChannelType.GuildText,
     topic: "Report reproducible MetaClicker problems with screenshots and details.",
     rateLimitPerUser: 10,
+    permissionOverwrites: memberOnly,
   });
   channels.suggestions = await ensureChannel(guild, categories.meta, {
     name: "suggestions",
     type: ChannelType.GuildText,
     topic: "Useful ideas for future MetaClicker updates.",
     rateLimitPerUser: 10,
+    permissionOverwrites: memberOnly,
   });
 
-  categories.xanenax = await ensureCategory(guild, "XANENAX");
+  categories.xanenax = await ensureCategory(guild, "XANENAX", memberOnly);
   channels.youtube = await ensureChannel(guild, categories.xanenax, {
     name: "youtube",
     type: ChannelType.GuildText,
     topic: "New XANENAX videos and channel updates.",
-    permissionOverwrites: readOnlyOverwrites(guild),
+    permissionOverwrites: memberReadOnly,
   });
   channels.videoIdeas = await ensureChannel(guild, categories.xanenax, {
     name: "video-ideas",
     type: ChannelType.GuildText,
     topic: "Suggest clients, tests, and video ideas.",
     rateLimitPerUser: 10,
+    permissionOverwrites: memberOnly,
   });
 
-  categories.community = await ensureCategory(guild, "COMMUNITY");
+  categories.community = await ensureCategory(
+    guild,
+    "COMMUNITY",
+    memberOnly,
+  );
   channels.general = await ensureChannel(guild, categories.community, {
     name: "general",
     type: ChannelType.GuildText,
     topic: "General XANENAX community chat.",
     reuseDefaultNames: ["Allgemein"],
+    permissionOverwrites: memberOnly,
   });
   channels.media = await ensureChannel(guild, categories.community, {
     name: "media",
     type: ChannelType.GuildText,
     topic: "Share clips, screenshots, setups, and creations.",
+    permissionOverwrites: memberOnly,
   });
   channels.wordle = await ensureChannel(guild, categories.community, {
     name: "wordle",
     type: ChannelType.GuildText,
     topic: "Play the daily Wordle with /wordle.",
+    permissionOverwrites: memberOnly,
   });
   channels.botCommands = await ensureChannel(
     guild,
@@ -355,18 +473,21 @@ export async function setupServer(guild, config) {
       name: "bot-commands",
       type: ChannelType.GuildText,
       topic: "Commands and future bot utilities.",
+      permissionOverwrites: memberOnly,
     },
   );
 
-  categories.voice = await ensureCategory(guild, "VOICE");
+  categories.voice = await ensureCategory(guild, "VOICE", memberOnly);
   channels.generalVoice = await ensureChannel(guild, categories.voice, {
     name: "General",
     type: ChannelType.GuildVoice,
     reuseDefaultNames: ["Allgemein"],
+    permissionOverwrites: memberOnly,
   });
   channels.supportVoice = await ensureChannel(guild, categories.voice, {
     name: "Support",
     type: ChannelType.GuildVoice,
+    permissionOverwrites: memberOnly,
   });
 
   categories.staff = await ensureCategory(
@@ -379,11 +500,7 @@ export async function setupServer(guild, config) {
     type: ChannelType.GuildText,
     topic: "Private staff coordination.",
   });
-  channels.joinLog = await ensureChannel(guild, categories.staff, {
-    name: "join-log",
-    type: ChannelType.GuildText,
-    topic: "Private member join log.",
-  });
+  await deleteLegacyJoinLog(guild);
 
   const owner = await guild.fetchOwner();
   if (!owner.roles.cache.has(roles.creator.id) && roles.creator.editable) {
@@ -393,6 +510,12 @@ export async function setupServer(guild, config) {
   if (guild.systemChannelId !== channels.welcome.id) {
     await guild.setSystemChannel(channels.welcome, MANAGED_REASON);
   }
+  const systemFlags = new Set(guild.systemChannelFlags.toArray());
+  systemFlags.add("SuppressJoinNotifications");
+  systemFlags.add("SuppressJoinNotificationReplies");
+  await guild.setSystemChannelFlags([...systemFlags], MANAGED_REASON);
+
+  await removeNativeJoinMessages(channels.general);
 
   await removeEmptyDefaultCategories(guild);
 
@@ -414,6 +537,24 @@ export async function setupServer(guild, config) {
       "1. Be respectful and keep discussions constructive.\n2. No spam, scams, malware, or unofficial download mirrors.\n3. Use the correct support and bug-report channels.\n4. Do not sell or re-upload MetaClicker as your own work.\n5. Follow Discord’s Terms of Service.",
       "rules-v1",
     ),
+  );
+
+  await ensureSeedMessage(
+    channels.verify,
+    "verify-v1",
+    baseEmbed(
+      "Verify to unlock the server",
+      "Press the button below once. You will immediately get access to the MetaClicker, XANENAX, community, and voice channels.",
+      "verify-v1",
+    ),
+    [
+      new ActionRowBuilder().addComponents(
+        new ButtonBuilder()
+          .setCustomId("verify_member")
+          .setLabel("Verify")
+          .setStyle(ButtonStyle.Primary),
+      ),
+    ],
   );
 
   await ensureSeedMessage(

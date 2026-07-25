@@ -5,8 +5,9 @@ Custom Discord bot for the XANENAX community, with MetaClicker as the main focus
 ## Included
 
 - automatic server setup with roles, categories, text channels, and voice channels
-- public welcome messages and private join logs
-- automatic `Member` role for new users
+- branded welcome cards in a dedicated `#joined` channel
+- button verification in `#verify`; verified users receive the `Member` role
+- locked community, MetaClicker, XANENAX, and voice channels until verification
 - daily Wordle through `/wordle`
 - safe, repeatable `/setup` command that only creates or updates managed items
 - official MetaClicker and YouTube links

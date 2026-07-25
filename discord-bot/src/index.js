@@ -1,5 +1,6 @@
 import {
   ActivityType,
+  AttachmentBuilder,
   Client,
   EmbedBuilder,
   Events,
@@ -8,6 +9,7 @@ import {
   PermissionFlagsBits,
   SlashCommandBuilder,
 } from "discord.js";
+import { fileURLToPath } from "node:url";
 import { config, validateConfig } from "./config.js";
 import {
   accentColor,
@@ -16,6 +18,10 @@ import {
   setupServer,
 } from "./server-layout.js";
 import { handleWordle } from "./wordle.js";
+
+const welcomeBannerPath = fileURLToPath(
+  new URL("../assets/welcome-banner.png", import.meta.url),
+);
 
 validateConfig();
 
@@ -82,44 +88,27 @@ client.once(Events.ClientReady, async (readyClient) => {
 
 client.on(Events.GuildMemberAdd, async (member) => {
   try {
-    const memberRole = findManagedRole(member.guild, "Member");
-    if (memberRole?.editable) {
-      await member.roles.add(memberRole, "Automatic member role");
-    }
+    const joinedChannel = findManagedChannel(member.guild, "joined");
+    if (joinedChannel?.isTextBased()) {
+      const banner = new AttachmentBuilder(welcomeBannerPath, {
+        name: "welcome-banner.png",
+      });
 
-    const welcomeChannel = findManagedChannel(member.guild, "welcome");
-    if (welcomeChannel?.isTextBased()) {
-      await welcomeChannel.send({
+      await joinedChannel.send({
         content: `${member}`,
+        files: [banner],
         embeds: [
           new EmbedBuilder()
             .setColor(accentColor)
             .setTitle("Welcome to XANENAX • MetaClicker")
             .setDescription(
-              `Welcome, ${member}! Get the official build in **#downloads**, read **#rules**, and ask questions in **#support**.`,
+              `Glad you are here, ${member}. Head to **#verify** to unlock the server and join the MetaClicker community.`,
             )
             .setThumbnail(member.user.displayAvatarURL({ size: 256 }))
+            .setImage("attachment://welcome-banner.png")
             .setFooter({
-              text: `Member ${member.guild.memberCount}`,
+              text: `Member #${member.guild.memberCount}`,
             })
-            .setTimestamp(),
-        ],
-      });
-    }
-
-    const joinLog = findManagedChannel(member.guild, "join-log");
-    if (joinLog?.isTextBased()) {
-      await joinLog.send({
-        embeds: [
-          new EmbedBuilder()
-            .setColor(accentColor)
-            .setTitle("Member joined")
-            .setDescription(`${member.user.tag} (${member.id})`)
-            .addFields({
-              name: "Account created",
-              value: `<t:${Math.floor(member.user.createdTimestamp / 1000)}:R>`,
-            })
-            .setThumbnail(member.user.displayAvatarURL({ size: 128 }))
             .setTimestamp(),
         ],
       });
@@ -130,11 +119,43 @@ client.on(Events.GuildMemberAdd, async (member) => {
 });
 
 client.on(Events.InteractionCreate, async (interaction) => {
-  if (!interaction.isChatInputCommand() || !interaction.inGuild()) {
+  if (!interaction.inGuild()) {
     return;
   }
 
   try {
+    if (interaction.isButton() && interaction.customId === "verify_member") {
+      const memberRole = findManagedRole(interaction.guild, "Member");
+      const member = await interaction.guild.members.fetch(interaction.user.id);
+
+      if (!memberRole?.editable) {
+        await interaction.reply({
+          content: "Verification is temporarily unavailable. Please contact staff.",
+          flags: MessageFlags.Ephemeral,
+        });
+        return;
+      }
+
+      if (member.roles.cache.has(memberRole.id)) {
+        await interaction.reply({
+          content: "You are already verified.",
+          flags: MessageFlags.Ephemeral,
+        });
+        return;
+      }
+
+      await member.roles.add(memberRole, "Verified through #verify");
+      await interaction.reply({
+        content: "Verified — welcome! The rest of the server is now unlocked.",
+        flags: MessageFlags.Ephemeral,
+      });
+      return;
+    }
+
+    if (!interaction.isChatInputCommand()) {
+      return;
+    }
+
     if (interaction.commandName === "wordle") {
       await handleWordle(interaction);
       return;
