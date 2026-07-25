@@ -7,8 +7,8 @@ const message =
   process.argv.slice(2).join(" ").trim() ||
   "Codex needs your help with the MetaClicker project. Please open the current Codex task.";
 
-if (message.length > 1_900) {
-  throw new Error("Notification text must be 1,900 characters or fewer.");
+if (message.length > 1_800) {
+  throw new Error("Notification text must be 1,800 characters or fewer.");
 }
 
 const rest = new REST({ version: "10" }).setToken(config.token);
@@ -23,7 +23,15 @@ const managedPrefixes = [
   "🔔 **Codex needs you**",
 ];
 const sentMessage = await rest.post(Routes.channelMessages(dmChannel.id), {
-  body: { content: `${notificationPrefix}\n${message}` },
+  body: {
+    content: `${notificationPrefix} • <@${guild.owner_id}>\n${message}`,
+    allowed_mentions: {
+      parse: [],
+      users: [guild.owner_id],
+      roles: [],
+      replied_user: false,
+    },
+  },
 });
 
 const recentMessages = await rest.get(Routes.channelMessages(dmChannel.id), {
