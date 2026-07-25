@@ -6,7 +6,8 @@
   "description": "Discord bot for the XANENAX and MetaClicker community.",
   "scripts": {
     "start": "node src/index.js",
-    "check": "node --check src/index.js && node --check src/server-layout.js && node --check src/wordle.js",
+    "notify-owner": "node src/notify-owner.js",
+    "check": "node --check src/index.js && node --check src/notify-owner.js && node --check src/server-layout.js && node --check src/wordle.js",
     "test": "node --test"
   },
   "engines": {

@@ -30,3 +30,9 @@ Custom Discord bot for the XANENAX community, with MetaClicker as the main focus
 The `.env` file and Wordle save data are ignored by Git. Never post the bot token in Discord, GitHub, screenshots, or chat messages.
 
 The bot runs while this process is active. Permanent 24/7 operation requires a host or a computer that stays online.
+
+To send the server owner a private Discord notification when Codex needs help:
+
+```powershell
+npm run notify-owner -- "Please open the current Codex task."
+```
