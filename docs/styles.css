@@ -334,6 +334,17 @@ a:focus-visible {
   clip-path: polygon(40px 0, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0 100%, 0 40px);
 }
 
+.real-app-shot {
+  display: block;
+  width: min(92%, 650px);
+  height: auto;
+  border: 1px solid var(--line-bright);
+  border-radius: 18px;
+  box-shadow:
+    0 38px 95px rgba(0, 0, 0, 0.66),
+    0 0 54px rgba(132, 37, 255, 0.18);
+}
+
 .product-visual::before,
 .product-visual::after {
   position: absolute;
@@ -658,6 +669,58 @@ a:focus-visible {
   border-top: 1px solid var(--line);
 }
 
+.screenshots {
+  padding-block: 125px;
+  border-top: 1px solid var(--line);
+}
+
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.screenshot-card {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(11, 8, 18, 0.86);
+  box-shadow: 0 24px 65px rgba(0, 0, 0, 0.32);
+}
+
+.screenshot-wide {
+  grid-column: 1 / -1;
+}
+
+.screenshot-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.screenshot-card figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 15px 18px;
+  border-top: 1px solid var(--line);
+  font-family: Consolas, monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
+}
+
+.screenshot-card figcaption span {
+  color: var(--accent-light);
+}
+
+.screenshot-card figcaption b {
+  color: #746a80;
+}
+
 .section-lead {
   max-width: 880px;
   margin-bottom: 60px;
@@ -879,12 +942,12 @@ footer > span {
   }
 
   .product-visual {
-    min-height: 480px;
+    min-height: 340px;
+    padding: 66px 12px 72px;
   }
 
-  .app-shell {
-    width: 94%;
-    transform: none;
+  .real-app-shot {
+    width: 100%;
   }
 
   .app-titlebar {
@@ -919,8 +982,17 @@ footer > span {
   }
 
   .features,
+  .screenshots,
   .project {
     padding-block: 78px;
+  }
+
+  .screenshot-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .screenshot-wide {
+    grid-column: auto;
   }
 
   .feature-card {

@@ -27,9 +27,9 @@ namespace MetaClicker.usercontrol
             Branding.StyleRoundedSurface(siticoneGradientPanel2, 12, Branding.Surface);
             HideBtn.BorderRadius = 8;
 
-            LayoutSliderRow(RValue, RSld, 11);
-            LayoutSliderRow(GValue, GSld, 48);
-            LayoutSliderRow(BValue, BSld, 85);
+            LayoutSliderRow(RValue, RSld, 6);
+            LayoutSliderRow(GValue, GSld, 43);
+            LayoutSliderRow(BValue, BSld, 80);
             Branding.StyleSlider(RSld, Branding.Surface);
             Branding.StyleSlider(GSld, Branding.Surface);
             Branding.StyleSlider(BSld, Branding.Surface);

@@ -5,6 +5,18 @@
 
 A compact, free and open-source Windows autoclicker built for Minecraft.
 
+## MetaClicker 1.1
+
+![MetaClicker 1.1 left-clicker panel](docs/assets/screenshots/metaclicker-left.png)
+
+Version 1.1 improves and refines the new unified design across the startup
+screen, both clicker profiles, and settings. It also brings cleaner spacing,
+rounded surfaces, sliders, window controls, and a consistent English interface.
+
+| Right-clicker profile | Settings |
+| --- | --- |
+| ![MetaClicker right-clicker profile](docs/assets/screenshots/metaclicker-right.png) | ![MetaClicker settings](docs/assets/screenshots/metaclicker-settings.png) |
+
 ## Features
 
 - separate left- and right-click settings

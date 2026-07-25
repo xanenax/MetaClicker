@@ -2,9 +2,9 @@
 
 Only meaningful MetaClicker releases are listed here.
 
-## 1.1.0 – XANENAX Refresh
+## 1.1.0 – Unified Design
 
-- refreshed the app, startup screen, website, and documentation in one design system
+- improved and refined the new unified design across the app, startup screen, website, and documentation
 - added a metallic `M`, modern window controls, clean custom sliders, truly clipped concentric corners, offset accent slashes, dot details, and consistent panel spacing
 - moved the previous Self Destruct action to a clean window exit that stops clickers and timers first
 - translated the full project to English and reduced unnecessary copy
