@@ -28,3 +28,9 @@ TestResults/
 Thumbs.db
 Desktop.ini
 .DS_Store
+
+# Discord bot dependencies, secrets, and runtime state
+**/node_modules/
+discord-bot/.env
+discord-bot/data/*.json
+discord-bot/*.log
