@@ -336,7 +336,7 @@ a:focus-visible {
 
 .real-app-shot {
   display: block;
-  width: min(92%, 552px);
+  width: min(94%, 760px);
   height: auto;
   object-fit: contain;
   box-shadow:

@@ -13,10 +13,6 @@ Version 1.1 improves and refines the new unified design across the startup
 screen, both clicker profiles, and settings. It also brings cleaner spacing,
 rounded surfaces, sliders, window controls, and a consistent English interface.
 
-| Clicker | Startup |
-| --- | --- |
-| ![MetaClicker clicker panel](docs/assets/screenshots/metaclicker-main-clean.png) | ![MetaClicker startup](docs/assets/screenshots/metaclicker-startup-clean.png) |
-
 ## Features
 
 - separate left- and right-click settings
