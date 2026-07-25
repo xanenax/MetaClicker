@@ -338,8 +338,7 @@ a:focus-visible {
   display: block;
   width: min(92%, 650px);
   height: auto;
-  border: 1px solid var(--line-bright);
-  border-radius: 18px;
+  object-fit: contain;
   box-shadow:
     0 38px 95px rgba(0, 0, 0, 0.66),
     0 0 54px rgba(132, 37, 255, 0.18);
@@ -698,7 +697,11 @@ a:focus-visible {
   width: 100%;
   height: auto;
   aspect-ratio: 16 / 9;
-  object-fit: cover;
+  object-fit: contain;
+  padding: 18px;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(146, 53, 255, 0.1), transparent 58%),
+    #08060e;
 }
 
 .screenshot-card figcaption {
