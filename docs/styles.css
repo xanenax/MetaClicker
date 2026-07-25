@@ -336,7 +336,7 @@ a:focus-visible {
 
 .real-app-shot {
   display: block;
-  width: min(92%, 650px);
+  width: min(92%, 552px);
   height: auto;
   object-fit: contain;
   box-shadow:
@@ -694,11 +694,10 @@ a:focus-visible {
 
 .screenshot-card img {
   display: block;
-  width: 100%;
+  width: min(calc(100% - 36px), 552px);
   height: auto;
-  aspect-ratio: 16 / 9;
   object-fit: contain;
-  padding: 18px;
+  margin: 18px auto;
   background:
     radial-gradient(circle at 50% 50%, rgba(146, 53, 255, 0.1), transparent 58%),
     #08060e;
