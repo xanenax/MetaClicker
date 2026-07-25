@@ -339,6 +339,9 @@ a:focus-visible {
   width: min(94%, 760px);
   height: auto;
   object-fit: contain;
+  border: 1px solid rgba(169, 92, 255, 0.42);
+  border-radius: 3.6% / 6.4%;
+  clip-path: inset(0 round 3.6% / 6.4%);
   box-shadow:
     0 38px 95px rgba(0, 0, 0, 0.66),
     0 0 54px rgba(132, 37, 255, 0.18);
