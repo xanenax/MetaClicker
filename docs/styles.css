@@ -323,15 +323,9 @@ a:focus-visible {
 
 .product-visual {
   position: relative;
-  min-height: 540px;
+  min-height: 0;
   display: grid;
   place-items: center;
-  border: 1px solid rgba(169, 92, 255, 0.18);
-  background:
-    linear-gradient(135deg, rgba(146, 53, 255, 0.09), transparent 25%),
-    radial-gradient(circle at 52% 50%, rgba(146, 53, 255, 0.14), transparent 47%),
-    rgba(8, 6, 14, 0.72);
-  clip-path: polygon(40px 0, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0 100%, 0 40px);
 }
 
 .real-app-shot {
@@ -339,6 +333,9 @@ a:focus-visible {
   width: min(94%, 760px);
   height: auto;
   object-fit: contain;
+  overflow: hidden;
+  border: 1px solid rgba(169, 92, 255, 0.34);
+  border-radius: 3.5% / 6.2%;
   box-shadow:
     0 38px 95px rgba(0, 0, 0, 0.66),
     0 0 54px rgba(132, 37, 255, 0.18);
@@ -346,12 +343,7 @@ a:focus-visible {
 
 .product-visual::before,
 .product-visual::after {
-  position: absolute;
-  width: 130px;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--accent-light));
-  box-shadow: 0 0 16px var(--accent);
-  content: "";
+  content: none;
 }
 
 .product-visual::before {
@@ -907,7 +899,7 @@ footer > span {
   }
 
   .product-visual {
-    min-height: 590px;
+    min-height: 0;
   }
 
   .project {
@@ -944,8 +936,8 @@ footer > span {
   }
 
   .product-visual {
-    min-height: 340px;
-    padding: 66px 12px 72px;
+    min-height: 0;
+    padding: 0;
   }
 
   .real-app-shot {
