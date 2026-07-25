@@ -74,3 +74,13 @@ if [[ "$(docker inspect -f '{{.State.Running}}' "$CONTAINER_NAME")" != "true" ]]
 fi
 
 log "Bot update deployed successfully."
+
+notification="MetaClicker bot update ${target_commit:0:8} was deployed successfully on the Pi."
+if docker run --rm \
+  --env-file "$ENV_FILE" \
+  "$IMAGE_NAME" \
+  node src/notify-owner.js "$notification" >> "$LOG_FILE" 2>&1; then
+  log "Owner success notification sent."
+else
+  log "Bot is live, but the owner success notification failed."
+fi
