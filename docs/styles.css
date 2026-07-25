@@ -97,7 +97,6 @@ footer {
   align-items: center;
   justify-content: space-between;
   min-height: 92px;
-  border-bottom: 1px solid var(--line);
 }
 
 .brand {
@@ -110,7 +109,7 @@ footer {
 .brand img {
   width: 47px;
   height: 47px;
-  border-radius: 50%;
+  border-radius: 10px;
   filter: drop-shadow(0 0 18px rgba(146, 53, 255, 0.25));
 }
 
@@ -667,12 +666,10 @@ a:focus-visible {
 
 .features {
   padding-block: 125px 145px;
-  border-top: 1px solid var(--line);
 }
 
 .screenshots {
   padding-block: 125px;
-  border-top: 1px solid var(--line);
 }
 
 .screenshot-grid {
@@ -806,7 +803,6 @@ h2 em {
   grid-template-columns: minmax(0, 1.12fr) minmax(320px, 0.68fr);
   gap: 110px;
   padding-block: 105px;
-  border-top: 1px solid var(--line);
 }
 
 .project-story {
@@ -888,6 +884,7 @@ footer > span {
 .footer-brand img {
   width: 36px;
   height: 36px;
+  border-radius: 8px;
 }
 
 .footer-brand strong {
