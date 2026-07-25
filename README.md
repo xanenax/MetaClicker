@@ -18,7 +18,7 @@ rounded surfaces, sliders, window controls, and a consistent English interface.
 - separate left- and right-click settings
 - configurable hotkeys and CPS
 - number-key hotbar slot detection
-- optional Blockhit and Shift behavior
+- optional Shift behavior
 - local startup without an account or HWID check
 
 ## Project story
