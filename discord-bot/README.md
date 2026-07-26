@@ -39,3 +39,9 @@ npm run notify-owner -- "Please open the current Codex task."
 ```
 
 Managed Codex notifications are private, automatically mention the server owner, and remove older managed notifications so only the latest one remains.
+
+## Pi deployment
+
+The Pi checks GitHub once per minute. Changes inside `discord-bot/` are built,
+validated, deployed automatically, and confirmed through a private owner DM.
+If the new container fails to start, the updater restores the previous image.
