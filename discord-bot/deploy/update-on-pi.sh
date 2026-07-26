@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 
-REPO_DIR="/home/xanenax/metaclicker-repo"
-BOT_DIR="$REPO_DIR/discord-bot"
-RUNTIME_DIR="/home/xanenax/metaclicker-bot"
+REPO_DIR="/home/xanenax/xanenax-discord-bot"
+BOT_DIR="$REPO_DIR"
+RUNTIME_DIR="/home/xanenax/xanenax-discord-bot-runtime"
 ENV_FILE="$RUNTIME_DIR/.env"
 DATA_DIR="$RUNTIME_DIR/data"
 LOG_FILE="$RUNTIME_DIR/deploy.log"
-CONTAINER_NAME="metaclicker-bot"
-IMAGE_NAME="metaclicker-bot:latest"
-ROLLBACK_IMAGE="metaclicker-bot:rollback"
+CONTAINER_NAME="xanenax-discord-bot"
+IMAGE_NAME="xanenax-discord-bot:latest"
+ROLLBACK_IMAGE="xanenax-discord-bot:rollback"
 
 mkdir -p "$RUNTIME_DIR" "$DATA_DIR"
-exec 9>"/tmp/metaclicker-bot-update.lock"
+exec 9>"/tmp/xanenax-discord-bot-update.lock"
 flock -n 9 || exit 0
 
 log() {
@@ -29,15 +29,16 @@ if [[ "$current_commit" == "$target_commit" ]]; then
   exit 0
 fi
 
-bot_changed=1
-if git diff --quiet "$current_commit" "$target_commit" -- discord-bot; then
-  bot_changed=0
+runtime_changed=1
+if git diff --quiet "$current_commit" "$target_commit" -- \
+  Dockerfile package.json package-lock.json src assets; then
+  runtime_changed=0
 fi
 
 git reset --hard --quiet "$target_commit"
 
-if [[ "$bot_changed" -eq 0 ]]; then
-  log "Repository updated to ${target_commit:0:8}; no bot changes."
+if [[ "$runtime_changed" -eq 0 ]]; then
+  log "Repository updated to ${target_commit:0:8}; no runtime changes."
   exit 0
 fi
 
@@ -75,7 +76,7 @@ fi
 
 log "Bot update deployed successfully."
 
-notification="MetaClicker bot update ${target_commit:0:8} was deployed successfully on the Pi."
+notification="XANENAX Discord bot update ${target_commit:0:8} was deployed successfully on the Pi."
 if docker run --rm \
   --env-file "$ENV_FILE" \
   "$IMAGE_NAME" \

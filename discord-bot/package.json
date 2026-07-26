@@ -1,9 +1,9 @@
 {
-  "name": "xanenax-metaclicker-bot",
+  "name": "xanenax-discord-bot",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Discord bot for the XANENAX and MetaClicker community.",
+  "description": "Private Discord bot for the XANENAX community.",
   "scripts": {
     "start": "node src/index.js",
     "notify-owner": "node src/notify-owner.js",

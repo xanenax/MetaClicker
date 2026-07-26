@@ -1,6 +1,6 @@
-# XANENAX MetaClicker Bot
+# XANENAX Discord Bot
 
-Custom Discord bot for the XANENAX community, with MetaClicker as the main focus.
+Private custom Discord bot for the XANENAX community.
 
 ## Included
 
@@ -42,6 +42,7 @@ Managed Codex notifications are private, automatically mention the server owner,
 
 ## Pi deployment
 
-The Pi checks GitHub once per minute. Changes inside `discord-bot/` are built,
-validated, deployed automatically, and confirmed through a private owner DM.
-If the new container fails to start, the updater restores the previous image.
+The Pi checks this private repository once per minute. Runtime changes are
+built, validated, deployed automatically, and confirmed through a private
+owner DM. If the new container fails to start, the updater restores the
+previous image.
